@@ -1,0 +1,13 @@
+body {
+  box-sizing: border-box;
+}
+
+h, title {
+  font-family: "Shrikhand", cursive;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

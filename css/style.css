@@ -11,16 +11,17 @@ h2 {
   font-size: 20px;
 }
 
-.logo-ohmyfood {
+.header_logo {
   display: flex;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   height: 21px;
 }
 
 .location {
   width: 100%;
-  height: 245px;
+  height: 240px;
   background-color: #f2f2f2;
   padding-bottom: 10px;
 }
@@ -43,12 +44,13 @@ h2 {
   padding-left: 10px;
 }
 .location_title {
-  width: 100%;
-  height: 125px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 120px;
   background-color: #f2f2f2;
   text-align: center;
 }
-@media screen and (max-width: 363px) {
+@media screen and (max-width: 342px) {
   .location_title {
     height: 145px;
   }
@@ -64,7 +66,7 @@ h2 {
 .location_button {
   display: flex;
   justify-content: center;
-  height: 38px;
+  height: 40px;
   border: 1px solid #FF79DA;
   align-items: center;
   width: 195px;
@@ -73,9 +75,9 @@ h2 {
   background-color: #FF79DA;
   color: white;
 }
-@media screen and (max-width: 363px) {
+@media screen and (max-width: 342px) {
   .location_button {
-    height: 30px;
+    height: 35px;
   }
 }
 
@@ -133,16 +135,113 @@ h2 {
 }
 
 .restaurants {
-  width: 100%;
-  height: 600px;
+  height: auto;
   background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.restaurants_cards {
+  width: 100%;
+  height: 300px;
+  max-width: 350px;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 435px) {
+  .restaurants_cards {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .restaurants_cards {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .restaurants_cards {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .restaurants_cards {
+    height: 235px;
+  }
+}
+.restaurants_images {
+  width: 100%;
+  height: 240px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+@media screen and (max-width: 435px) {
+  .restaurants_images {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .restaurants_images {
+    height: 210px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .restaurants_images {
+    height: 190px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .restaurants_images {
+    height: 175px;
+  }
+}
+.restaurants_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.restaurants_text_name {
+  margin-bottom: 3px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.restaurants_text_location {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .footer {
-  width: 100%;
-  height: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+  height: 195px;
   background-color: black;
   color: white;
+}
+.footer_logo {
+  height: 18px;
+  color: white;
+  margin-bottom: 15px;
+  filter: invert(100%);
+}
+.footer_lign {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.footer_lign_mentions {
+  margin-top: 7px;
+  margin-bottom: -4px;
+}
+.footer_icon_propose {
+  padding-right: 15px;
+}
+.footer_icon_partner {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,63 @@
 .restaurants {
-    width :100%;
-    height : 600px;
-    background-color : #f2f2f2;
+    height : auto;
+    background-color : $color-background;
+    padding-left:20px ;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    &_cards {
+        width:100%;
+        height:300px;
+        max-width : 350px;
+        margin:auto;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        @media screen and (max-width:435px) {
+            height :290px;
+        }
+        @media screen and (max-width:360px) {
+            height : 270px;
+        }
+        @media screen and (max-width : 330px) {
+            height : 250px;
+        }
+        @media screen and (max-width : 305px) {
+            height :235px;
+        }
+    }
+    &_images {
+        width : 100%;  
+        height: 240px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        @media screen and (max-width:435px) {
+            height :230px;
+        }
+        @media screen and (max-width:360px) {
+            height : 210px;
+        }
+        @media screen and (max-width : 330px) {
+            height : 190px;
+        }
+        @media screen and (max-width : 305px) {
+            height :175px;
+        }
+    }
+    &_text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+        &_name {
+            margin-bottom :3px;
+            margin-top : 5px;
+            font-weight: bold;
+        }
+        &_location {
+            margin-bottom :0px;
+            margin-top : 0px;   
+        }
+    }
 }

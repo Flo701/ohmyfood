@@ -1,13 +1,148 @@
 body {
   box-sizing: border-box;
-}
-
-h, title {
-  font-family: "Shrikhand", cursive;
+  margin: 0%;
 }
 
 textarea {
   font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.logo-ohmyfood {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  height: 21px;
+}
+
+.location {
+  width: 100%;
+  height: 245px;
+  background-color: #f2f2f2;
+  padding-bottom: 10px;
+}
+.location_city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background-color: rgb(236, 225, 224);
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.location_icon {
+  padding-left: 43px;
+  padding-right: 0px;
+}
+.location input {
+  border: none;
+  background-color: rgb(236, 225, 224);
+  padding-left: 10px;
+}
+.location_title {
+  width: 100%;
+  height: 125px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+@media screen and (max-width: 363px) {
+  .location_title {
+    height: 145px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .location_title {
+    height: 152px;
+  }
+}
+.location_title_p {
+  font-size: 20px;
+}
+.location_button {
+  display: flex;
+  justify-content: center;
+  height: 38px;
+  border: 1px solid #FF79DA;
+  align-items: center;
+  width: 195px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #FF79DA;
+  color: white;
+}
+@media screen and (max-width: 363px) {
+  .location_button {
+    height: 30px;
+  }
+}
+
+.operating {
+  height: 230px;
+  margin: 20px;
+}
+.operating_title {
+  margin-bottom: 30px;
+}
+.operating_chose, .operating_compose, .operating_enjoy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.operating_number {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #9356DC;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  position: relative;
+  right: 115px;
+  z-index: 1;
+}
+.operating_text {
+  padding-left: 17px;
+}
+.operating_text--23 {
+  padding-left: 12px;
+}
+.operating_button {
+  display: flex;
+  align-items: center;
+  width: 229px;
+  height: 40px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  position: absolute;
+  box-shadow: 4px 4px 7px 4px rgb(236, 225, 224);
+}
+.operating_button--enjoy {
+  background-color: rgb(239, 253, 252);
+}
+.operating_icon {
+  padding-left: 20px;
+}
+.operating_icon--store {
+  color: #9356DC;
+  padding-left: 20px;
+}
+
+.restaurants {
+  width: 100%;
+  height: 600px;
+  background-color: #f2f2f2;
+}
+
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

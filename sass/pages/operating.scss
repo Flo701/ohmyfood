@@ -1,0 +1,52 @@
+.operating {
+    height : 230px;
+    margin : 20px;
+    &_title { 
+        margin-bottom :30px;
+        }
+    &_chose, &_compose, &_enjoy {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:45px;
+        }
+    &_number {
+        width:17px;
+        height:17px;
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+        color: white;
+        background-color: $color-primary;
+        text-align: center;
+        position:relative;
+        right:115px;
+        z-index:1;
+        }
+    &_text {
+        padding-left:17px;
+        &--23 {
+        padding-left:12px;
+        }
+    }    
+    &_button {
+        display: flex;
+        align-items: center;
+        width: 229px;
+        height:40px;
+        border:1px solid $color-background;
+        border-radius:15px;
+        background-color: $color-background;
+        position:absolute; 
+        box-shadow: 4px 4px 7px 4px $color-background-darken; 
+        &--enjoy{
+            background-color: rgb(239 253 252);
+        } 
+    }
+    &_icon {    
+    padding-left:20px;
+        &--store {
+            color:$color-primary;
+            padding-left:20px;
+        }
+    }  
+}

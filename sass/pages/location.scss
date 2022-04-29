@@ -1,0 +1,59 @@
+.location {
+    width :100%;
+    height :245px;
+    background-color: $color-background;
+    padding-bottom: 10px;
+    &_city {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:35px;
+        background-color: $color-background-darken;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    &_icon {
+        padding-left: 43px;
+        padding-right: 0px;
+    }
+    & input {
+        border: none;
+        background-color: rgb(236, 225, 224);
+        padding-left: 10px;
+    }
+    &_title {
+        width:100%;
+        height: 125px;
+        background-color:#f2f2f2;
+        text-align : center;
+        @media screen and (max-width :363px) {
+            height: 145px;
+            } 
+        @media screen and (max-width : 321px) {
+            height : 152px;
+        } 
+        &_p {
+            font-size :20px;
+        }  
+    }
+    &_button {
+        display: flex;
+        justify-content: center;
+        height:38px;
+        border: 1px solid $color-secondary;
+        align-items: center;
+        width: 195px;
+        margin: auto;
+        border-radius: 20px;
+        background-color: $color-secondary;
+        color: white;
+        @media screen and (max-width :363px) {
+            height : 30px;
+        }
+    }       
+}
+
+
+    
+
+

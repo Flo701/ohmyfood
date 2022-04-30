@@ -9,14 +9,13 @@
         align-items: center;
         height:35px;
         background-color: $color-background-darken;
-        padding-left: 30px;
         margin-top: 10px;
     }
     &_icon {
-        padding-left: 43px;
-        padding-right: 0px;
+        padding-left: 25px;
     }
     & input {
+        width:130px;
         border: none;
         background-color: rgb(236, 225, 224);
         padding-left: 10px;

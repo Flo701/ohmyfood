@@ -1,7 +1,14 @@
-.header_logo {
-    display: flex;
-    margin:auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: 21px;
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right:20px;
+    &_logo {
+        display: flex;
+        margin:auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 21px;
+    }
 }

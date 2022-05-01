@@ -3,3 +3,10 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin button {
+    transform: scale(1.05);
+    opacity :0.5;
+    box-shadow: darken($color: #000000, $amount: 15%);
+    
+}

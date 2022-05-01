@@ -5,9 +5,7 @@
         margin-bottom :30px;
         }
     &_chose, &_compose, &_enjoy {
-        display:flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox-center;
         margin-bottom:45px;
         }
     &_number {
@@ -38,14 +36,14 @@
         background-color: $color-background;
         position:absolute; 
         box-shadow: 4px 4px 7px 4px $color-background-darken; 
-        &--enjoy{
-            background-color: rgb(239 253 252);
-        } 
+        transition: all 200ms;
+        &:hover{
+            @include button;
+        }
     }
     &_icon {    
     padding-left:20px;
         &--store {
-            color:$color-primary;
             padding-left:20px;
         }
     }  

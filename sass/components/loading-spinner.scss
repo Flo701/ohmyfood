@@ -18,10 +18,12 @@
         content:"";
         border:7px solid $color-background-darken;
         border-top-color: $color-primary;
+        border-right-color: $color-primary;
+        border-bottom-color:$color-primary;
         border-radius:50%;
         width: 90px;
         height: 90px;
-        animation:loading-spinner 3s ease forwards;         
+        animation:loading-spinner 3s linear forwards;         
     }
 }
  

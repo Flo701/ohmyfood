@@ -1,9 +1,14 @@
 .header {
+    //*@include flexbox-center;
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    margin-right:20px;
+    margin-left: 0px;
+    margin-right:0px;
+    padding:1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0/25%);
+    position: relative;
+    z-index:1;
     &_logo {
         display: flex;
         margin:auto;

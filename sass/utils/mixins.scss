@@ -5,8 +5,9 @@
 }
 
 @mixin button-hover {
+    cursor: pointer;
     transform: scale(1.02);
-    background: opacity 0.1;
+    opacity : 0.8;
     box-shadow:4px 4px 7px 4px darken($color-background-darken, $amount: 20%);
 }
 

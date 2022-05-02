@@ -1,13 +1,18 @@
 .image-menu {
-    z-index :0;
     width : 100%;
     height:305px;
     object-fit: cover;
+    @media screen and (max-width: 390px) {
+    height : 280px;
+    }
+    @media screen and (max-width: 350px) {
+        height : 225px;
+    }
 }
 
 .menu {
-    margin-top: -35px;
-    position: absolute;
+    margin-top: -40px;
+    position: relative;
     width: 100%;
     height: auto;
     padding-left: 20px;
@@ -24,10 +29,10 @@
     }
     &_choose {
         width:100%;
-        padding:10px;
-        margin-bottom: 10px;
+        padding:15px;
+        margin-bottom: 20px;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 20px;
         & h4 {
             margin :0;
         }
@@ -44,8 +49,11 @@
             font-weight: bold;
         }
     }
-    &_starter, &_maincourse, &_dessert {
+    &_starter, &_maincourse {
         margin-bottom : 35px;
         }
+    &_dessert {
+        margin-bottom : 45px;
+    }
     
 }

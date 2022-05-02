@@ -13,13 +13,13 @@
     }
     &_city {
         @include flexbox-center;
-        height:35px;
+        height:40px;
         background-color: $color-background-darken;
         margin-top: 0px;
     }
     &_icon {
         padding-left: 25px;
-        padding-right: 2.5px;
+        padding-right: 3px;
     }
     & input {
         width:130px;
@@ -39,24 +39,25 @@
             font-size :20px;
         }  
     }
-    &_button {
-        display: flex;
-        justify-content: center;
-        height:40px;
-        align-items: center;
-        width: 195px;
-        margin: auto;
-        border-radius: 20px;
-        background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
-        box-shadow:0px 0px 11px 0px rgba(213 182 179);
-        color: white;
-        transition : all 200ms;
-        &:hover {
-            @include button;
-            //*opacity :0.8;
-            //*box-shadow: darken($color:rgba(213 182 179), $amount: 50%);
-        }
-    }       
+    //&_button {
+        //display: flex;
+        //justify-content: center;
+        //:40px;
+        //align-items: center;
+        //width: 195px;
+        //margin: auto;
+        //border-radius: 20px;
+        //border:none;
+        //background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
+        //box-shadow:0px 0px 11px 0px rgba(213 182 179);
+        //color: white;
+        //transition : all 200ms;
+        //&:hover {
+            //@include button-hover;
+            //cursor:pointer;
+        //}
+        
+    //}       
 }
 
 

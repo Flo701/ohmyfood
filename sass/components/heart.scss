@@ -1,0 +1,7 @@
+.heart {
+    font-weight: 300;
+    transition : all 200ms;
+    &:hover {
+        color : $color-secondary;
+    }
+}

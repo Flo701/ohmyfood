@@ -14,6 +14,7 @@
         background-color: white;
         border-radius: 15px;
         margin-bottom: 20px;
+        transition: all 200ms;
         @media screen and (max-width:435px) {
             height :290px;
         }
@@ -25,6 +26,9 @@
         }
         @media screen and (max-width : 305px) {
             height :235px;
+        }
+        &:hover {
+            transform: scale(1.02);
         }
     }
     &_images {
@@ -43,11 +47,6 @@
         }
         @media screen and (max-width : 305px) {
             height :175px;
-        }
-        &--menu {
-            width : 100%;
-            height:305px;
-            object-fit: cover;
         }
     }
     &_text {
@@ -76,11 +75,5 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    &_heart {
-        &:hover {
-            color : $color-secondary;
-            background-color: $color-secondary ;
-        }
     }
 }

@@ -1,19 +1,19 @@
+@import "../utils/mixins";
+
 .header {
-    //*@include flexbox-center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox-center;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: 0px;
     margin-right:0px;
-    padding:1rem;
     box-shadow: 0 0 0.5rem rgb(0 0 0/25%);
     position: relative;
     z-index:1;
     &_logo {
         display: flex;
+        align-items: center;
         margin:auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 21px;
     }
 }

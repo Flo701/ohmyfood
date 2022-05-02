@@ -13,17 +13,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation:loading 3s forwards;
+    animation:loading 3s linear forwards;
     &::after {
         content:"";
-        border:7px solid $color-background-darken;
+        border:5px solid $color-background-darken;
         border-top-color: $color-primary;
         border-right-color: $color-primary;
         border-bottom-color:$color-primary;
         border-radius:50%;
-        width: 90px;
-        height: 90px;
-        animation:loading-spinner 3s linear forwards;         
+        width: 80px;
+        height: 80px;
+        animation:loading-spinner 3s ease forwards;         
     }
 }
  

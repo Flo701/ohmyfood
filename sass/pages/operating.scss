@@ -4,18 +4,20 @@
     &_title { 
         margin-bottom :30px;
         }
-    &_chose, &_compose, &_enjoy {
+    &_choose, &_compose, &_enjoy {
         @include flexbox-center;
         margin-bottom:45px;
+        margin-left:auto;
+        margin-right: auto;
         }
     &_number {
-        width:17px;
-        height:17px;
+        @include flexbox-center;
+        width:19px;
+        height:19px;
         border: 1px solid $color-primary;
         border-radius: 50%;
         color: white;
         background-color: $color-primary;
-        text-align: center;
         position:relative;
         right:115px;
         z-index:1;
@@ -37,14 +39,17 @@
         position:absolute; 
         box-shadow: 4px 4px 7px 4px $color-background-darken; 
         transition: all 200ms;
-        &:hover{
-            @include button;
+        &:hover {
+            @include button-hover;
+            cursor : pointer;
+        }
+        &:hover > _icon {
+            color: $color-primary;
         }
     }
     &_icon {    
     padding-left:20px;
-        &--store {
-            padding-left:20px;
-        }
+    color: grey;
     }  
 }
+

@@ -2,11 +2,25 @@ textarea {
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-    font-size: 20px;
+header h1, h2 {
+    font-family: "Shrikhand",cursive;
+    font-size: 24px;
 }
 
-a {
+h3 {
+    font-size : 20px;
+}
+
+.menu h3 {
+    font-weight: 500;
+}
+
+main a {
     text-decoration: none;
     color: black;
-  }
+}
+
+footer a {
+    text-decoration: none;
+    color: white ;
+}

@@ -53,13 +53,18 @@
             width : 230px;
         }
         &:hover {
-            @include button-hover;
+            cursor: pointer;
+            transform: scale(1.02);
+            box-shadow:4px 4px 7px 4px darken($color-background, $amount: 30%);
+            background: lighten($color-background, $amount:2%);
         }
         &:hover >.operating_icon {
             color: $color-primary;
+            transform: scale(1.15);
         }
     }
-    &_icon {    
+    &_icon {
+    transition: all 200ms;    
     padding-left:30px;
     color: grey;
     } 

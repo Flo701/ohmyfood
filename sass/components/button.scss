@@ -10,7 +10,7 @@
         background: $color-linear-gradient;
         box-shadow:3px 3px 7px 4px darken($color-background, 15%); //$color-background-darken;
         color: white;
-        transition : all 200ms;
+        transition : all 200ms ease;
         &:hover {
             cursor: pointer;
             transform: scale(1.02);

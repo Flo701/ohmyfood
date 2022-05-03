@@ -27,27 +27,63 @@
         align-items: center;
         justify-content: space-between;
     }
-    &_choose {
+    &_choice {
+        display: flex;
+        justify-content: space-between;
         width:100%;
-        padding:15px;
+        height: 70px;
         margin-bottom: 20px;
         background-color: white;
         border-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover {
+            .menu_choice_animation {
+                margin-right :0;
+            }
+            i {
+                animation: animation-menu 0.8s;
+            }
+        }
         & h4 {
-            margin :0;
+            margin-top :0;
+            margin-bottom: 0;
         }
-    }
-    &_price {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        & p {
-            margin :0;
-            margin-top:4px;
+        &_animation {
+            width :65px;
+            background: $color-tertiary;
+            border-radius: 0 20px 20px 0;
+            margin-right:-65px;
+            transition: all 0.8s ease;
+            @include flexbox-center;
+            & i {
+                background-color: white;
+                width:20px;
+                height:20px;
+                border-radius:50%;
+                color:$color-tertiary;
+                @include flexbox-center;
+            }
         }
-        & span {
-            font-weight: bold;
+        &_text {
+            width:100%;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:15px;
+            padding-right:15px;
         }
+        &_price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top:10px;
+            & p {
+                margin :0;
+                //margin-top:0px;
+            }
+            & span {
+                font-weight: bold;
+            }
     }
     &_starter, &_maincourse {
         margin-bottom : 35px;
@@ -55,5 +91,5 @@
     &_dessert {
         margin-bottom : 45px;
     }
-    
+}    
 }

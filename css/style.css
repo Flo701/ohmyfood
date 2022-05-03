@@ -346,32 +346,70 @@ footer a {
   align-items: center;
   justify-content: space-between;
 }
-.menu_choose {
+.menu_choice {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 15px;
+  height: 70px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.menu_choose h4 {
-  margin: 0;
+.menu_choice:hover .menu_choice_animation {
+  margin-right: 0;
 }
-.menu_price {
+.menu_choice:hover i {
+  animation: animation-menu 0.8s;
+}
+.menu_choice h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu_choice_animation {
+  width: 65px;
+  background: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  margin-right: -65px;
+  transition: all 0.8s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_choice_animation i {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_choice_text {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.menu_choice_price {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
-.menu_price p {
+.menu_choice_price p {
   margin: 0;
-  margin-top: 4px;
 }
-.menu_price span {
+.menu_choice_price span {
   font-weight: bold;
 }
-.menu_starter, .menu_maincourse {
+.menu_choice_starter, .menu_choice_maincourse {
   margin-bottom: 35px;
 }
-.menu_dessert {
+.menu_choice_dessert {
   margin-bottom: 45px;
 }
 
@@ -433,7 +471,7 @@ footer a {
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: 3px 3px 7px 4px #cccccc;
   color: white;
-  transition: all 200ms;
+  transition: all 200ms ease;
 }
 .button:hover {
   cursor: pointer;
@@ -446,6 +484,7 @@ footer a {
   position: relative;
   font-size: 22px;
   font-weight: 300;
+  transition: all 400ms ease;
 }
 .restaurants .fa-solid {
   color: transparent;
@@ -453,7 +492,7 @@ footer a {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 400ms;
+  transition: all 400ms ease;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -462,28 +501,40 @@ footer a {
 }
 .restaurants .fa-solid:hover {
   opacity: 1;
+  transition: all 400ms ease;
 }
 
-.menu .fa-regular {
+.menu_title .fa-regular {
   position: relative;
   font-size: 22px;
   font-weight: 300;
 }
-.menu .fa-solid {
+.menu_title .fa-solid {
   color: transparent;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 400ms;
+  transition: all 400ms ease;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
-.menu .fa-solid:hover {
+.menu_title .fa-solid:hover {
+  cursor: pointer;
   opacity: 1;
+  transition: all 400ms ease;
+}
+
+@keyframes animation-menu {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

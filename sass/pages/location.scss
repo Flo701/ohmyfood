@@ -5,13 +5,10 @@
     height :285px;
     background-color: $color-background;
     padding-bottom: 10px;
-    @media screen and (max-width:385px) {
+    @media screen and (max-width:386px) {
         height : 320px;
     }
-    @media screen and (max-width:351px) {
-        height:330px;
-        }
-    @media screen and(max-width:342px) {
+    @media screen and (max-width:356px) {
         height:340px;
     }
     &_city {
@@ -21,14 +18,15 @@
         margin-top: 0px;
     }
     &_icon {
-        padding-left: 25px;
+        padding-left: 19px;
         padding-right: 3px;
     }
     & input {
         width:130px;
+        height:30px;
         border: none;
         background-color: $color-location-city;
-        padding-left: 10px;
+        padding-left: 5px;
     }
     &_title {
         padding-left: 20px;

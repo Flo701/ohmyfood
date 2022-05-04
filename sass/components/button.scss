@@ -1,24 +1,22 @@
 .button {
-    display: flex;
-        justify-content: center;
-        height:47px;
-        align-items: center;
-        width: 205px;
-        margin: auto;
-        border-radius: 22px;
-        border:none;
-        background: $color-linear-gradient;
-        box-shadow:3px 3px 7px 1px $color-background-darken; //$color-background-darken;
-        color: white;
-        transition : all 200ms ease;
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.02);
-            box-shadow:3px 3px 7px 1px darken($color-background-darken, $amount: 20%);
-            //background: linear-gradient(180deg, #FF93F4 0%, #AD70F6 100%);
-            //10% plus claires que les couleurs d'origine//
-            //5% plus claires -->#FF86E7 et #A063E9//
-            background: linear-gradient(180deg, rgba(255,121,218,0.8) 0%, rgba(147,86,220,0.8) 100%);
-            //Finalement, j'ai pris les mêmes couleurs, et j'ai joué sur l'opacité
-            }
+    @include flexbox-center;
+    height:47px;
+    width: 205px;
+    margin: auto;
+    border-radius: 22px;
+    border:none;
+    background: $color-linear-gradient;
+    box-shadow:3px 3px 7px 1px $color-background-darken; 
+    color: white;
+    transition : all 200ms ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        box-shadow:3px 3px 7px 1px darken($color-background-darken, $amount: 20%);
+        //background: linear-gradient(180deg, #FF93F4 0%, #AD70F6 100%);
+        //10% plus claires que les couleurs d'origine//
+        //5% plus claires -->#FF86E7 et #A063E9//
+        background: linear-gradient(180deg, rgba(255,121,218,0.85) 0%, rgba(147,86,220,0.85) 100%);
+        //Finalement, j'ai pris les mêmes couleurs, et j'ai joué sur l'opacité
+        }
 }

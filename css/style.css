@@ -360,6 +360,7 @@ footer a {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
+  animation: animation-menu-appear 3s ease-in-out 150ms both;
 }
 .menu_choice:hover .menu_choice_animation {
   margin-right: 0;
@@ -439,6 +440,18 @@ footer a {
   padding-bottom: 50px;
 }
 
+.menu_choice1 {
+  animation-delay: 300ms;
+}
+
+.menu_choice2 {
+  animation-delay: 600ms;
+}
+
+.menu_choice3 {
+  animation-delay: 900ms;
+}
+
 .loading-spinner {
   background-color: white;
   opacity: 0.8;
@@ -508,6 +521,7 @@ footer a {
 
 .restaurants .fa-regular {
   position: relative;
+  padding-right: 1px;
   font-size: 22px;
   font-weight: 300;
   transition: all 200ms ease;
@@ -527,11 +541,12 @@ footer a {
 }
 .restaurants .fa-solid:hover {
   opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1.08);
 }
 
 .menu_title .fa-regular {
   position: relative;
+  padding-right: 1px;
   font-size: 22px;
   font-weight: 300;
   transition: all 200ms ease;
@@ -552,7 +567,7 @@ footer a {
 .menu_title .fa-solid:hover {
   cursor: pointer;
   opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1.08);
 }
 
 @keyframes animation-menu {
@@ -561,6 +576,16 @@ footer a {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes animation-menu-appear {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 0px;
   }
 }
 

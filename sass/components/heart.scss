@@ -1,6 +1,7 @@
 .restaurants {
     & .fa-regular {
         position: relative;
+        padding-right: 1px;
         font-size : 22px;
         font-weight: 300;
         transition: all 200ms ease;
@@ -22,7 +23,7 @@
         right:0;    
         &:hover {
             opacity:1;
-            transform: scale(1.15);
+            transform: scale(1.08);
             // transition: all 400ms ease;         
         }
     }
@@ -31,6 +32,7 @@
 .menu_title {
     & .fa-regular  {
         position: relative;
+        padding-right: 1px;
         font-size : 22px;
         font-weight: 300;
         transition: all 200ms ease;  
@@ -51,7 +53,7 @@
         &:hover {
             cursor: pointer;
             opacity:1; 
-            transform: scale(1.15);
+            transform: scale(1.08);
             // transition: all 400ms ease;        
         }
     }

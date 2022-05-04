@@ -41,6 +41,7 @@
         border-radius: 20px;
         overflow: hidden;
         cursor: pointer;
+        animation: animation-menu-appear 3s ease-in-out 150ms both;
         &:hover {
             .menu_choice_animation {
                 margin-right :0;
@@ -122,5 +123,11 @@
     &_button {
         background-color: $color-background;
         padding-bottom: 50px;
+    }
+}
+
+@for $i from 1 through 3 {
+    .menu_choice#{$i} {
+    animation-delay: 300ms*$i;
     }
 }

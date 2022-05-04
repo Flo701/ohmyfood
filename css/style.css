@@ -18,6 +18,7 @@ body {
 header h1, h2 {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
+  font-weight: 500;
 }
 
 h3 {
@@ -192,7 +193,7 @@ footer a {
   border: 1px solid #F2F2F2;
   border-radius: 17px;
   background-color: #F2F2F2;
-  box-shadow: 4px 4px 7px 4px #EDE8E7;
+  box-shadow: 4px 4px 7px 1px #D9D9D9;
   transition: all 200ms;
 }
 @media screen and (max-width: 355px) {
@@ -203,7 +204,7 @@ footer a {
 .operating_button:hover {
   cursor: pointer;
   transform: scale(1.02);
-  box-shadow: 4px 4px 7px 4px #a6a6a6;
+  box-shadow: 4px 4px 7px 1px #a6a6a6;
   background: #f7f7f7;
 }
 .operating_button:hover > .operating_icon {
@@ -231,6 +232,7 @@ footer a {
   max-width: 350px;
   margin: auto;
   background-color: white;
+  box-shadow: 4px 4px 7px 1px #D9D9D9;
   border-radius: 15px;
   margin-bottom: 20px;
   transition: all 200ms;
@@ -257,6 +259,7 @@ footer a {
 }
 .restaurants_cards:hover {
   transform: scale(1.02);
+  box-shadow: 4px 4px 7px 1px #a6a6a6;
 }
 .restaurants_images {
   width: 100%;
@@ -336,7 +339,7 @@ footer a {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   border-radius: 35px 35px 0 0;
   background-color: #F2F2F2;
 }
@@ -353,6 +356,7 @@ footer a {
   height: 70px;
   margin-bottom: 20px;
   background-color: white;
+  box-shadow: 4px 4px 7px 1px #D9D9D9;
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
@@ -364,6 +368,9 @@ footer a {
   animation: animation-menu 0.8s;
 }
 .menu_choice h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -388,6 +395,7 @@ footer a {
   justify-content: center;
 }
 .menu_choice_text {
+  overflow: hidden;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -401,16 +409,34 @@ footer a {
   margin-top: 10px;
 }
 .menu_choice_price p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
 }
 .menu_choice_price span {
+  padding-left: 7px;
   font-weight: bold;
 }
-.menu_choice_starter, .menu_choice_maincourse {
+.menu_starter, .menu_maincourse, .menu_dessert {
   margin-bottom: 35px;
 }
-.menu_choice_dessert {
-  margin-bottom: 45px;
+.menu_starter h3, .menu_maincourse h3, .menu_dessert h3 {
+  position: relative;
+  margin-bottom: 25px;
+}
+.menu_starter h3::after, .menu_maincourse h3::after, .menu_dessert h3::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #99E2D0;
+}
+.menu_button {
+  background-color: #F2F2F2;
+  padding-bottom: 50px;
 }
 
 .loading-spinner {
@@ -431,7 +457,7 @@ footer a {
 }
 .loading-spinner::after {
   content: "";
-  border: 5px solid #EDE8E7;
+  border: 7px solid #D9D9D9;
   border-top-color: #9356DC;
   border-right-color: #9356DC;
   border-bottom-color: #9356DC;
@@ -469,22 +495,22 @@ footer a {
   border-radius: 22px;
   border: none;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: 3px 3px 7px 4px #cccccc;
+  box-shadow: 3px 3px 7px 1px #D9D9D9;
   color: white;
   transition: all 200ms ease;
 }
 .button:hover {
   cursor: pointer;
   transform: scale(1.02);
-  box-shadow: 3px 3px 7px 4px #a6a6a6;
-  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9) 0%, rgba(147, 86, 220, 0.9) 100%);
+  box-shadow: 3px 3px 7px 1px #a6a6a6;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.8) 0%, rgba(147, 86, 220, 0.8) 100%);
 }
 
 .restaurants .fa-regular {
   position: relative;
   font-size: 22px;
   font-weight: 300;
-  transition: all 400ms ease;
+  transition: all 200ms ease;
 }
 .restaurants .fa-solid {
   color: transparent;
@@ -501,13 +527,14 @@ footer a {
 }
 .restaurants .fa-solid:hover {
   opacity: 1;
-  transition: all 400ms ease;
+  transform: scale(1.15);
 }
 
 .menu_title .fa-regular {
   position: relative;
   font-size: 22px;
   font-weight: 300;
+  transition: all 200ms ease;
 }
 .menu_title .fa-solid {
   color: transparent;
@@ -525,7 +552,7 @@ footer a {
 .menu_title .fa-solid:hover {
   cursor: pointer;
   opacity: 1;
-  transition: all 400ms ease;
+  transform: scale(1.15);
 }
 
 @keyframes animation-menu {

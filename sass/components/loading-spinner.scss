@@ -16,7 +16,7 @@
     animation:loading 3s linear forwards;
     &::after {
         content:"";
-        border:5px solid $color-background-darken;
+        border:7px solid $color-background-darken;
         border-top-color: $color-primary;
         border-right-color: $color-primary;
         border-bottom-color:$color-primary;

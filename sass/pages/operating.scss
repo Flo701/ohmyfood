@@ -47,7 +47,7 @@
         border-radius:17px;
         background-color: $color-background;
         //position:absolute; 
-        box-shadow: 4px 4px 7px 4px $color-background-darken; 
+        box-shadow: 4px 4px 7px 1px $color-background-darken; 
         transition: all 200ms;
         @media screen and (max-width: 355px) {
             width : 230px;
@@ -55,7 +55,7 @@
         &:hover {
             cursor: pointer;
             transform: scale(1.02);
-            box-shadow:4px 4px 7px 4px darken($color-background, $amount: 30%);
+            box-shadow:4px 4px 7px 1px darken($color-background-darken, $amount: 20%);
             background: lighten($color-background, $amount:2%);
         }
         &:hover >.operating_icon {

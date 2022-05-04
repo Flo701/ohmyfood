@@ -17,7 +17,7 @@
     &_city {
         @include flexbox-center;
         height:40px;
-        background-color: $color-background-darken;
+        background-color: $color-location-city;
         margin-top: 0px;
     }
     &_icon {
@@ -27,7 +27,7 @@
     & input {
         width:130px;
         border: none;
-        background-color: $color-background-darken;
+        background-color: $color-location-city;
         padding-left: 10px;
     }
     &_title {

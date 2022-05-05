@@ -5,6 +5,9 @@
     height :285px;
     background-color: $color-background;
     padding-bottom: 10px;
+    @media screen and(min-width:768px) and (max-width:991px) {
+        height: 303px;
+    }
     @media screen and (max-width:386px) {
         height : 320px;
     }
@@ -29,6 +32,7 @@
         padding-left: 4px;
     }
     &_title {
+        
         padding-left: 20px;
         padding-right:20px;
         padding-top :20px;
@@ -37,6 +41,7 @@
         background-color:$color-background;
         text-align : center;
         &_p {
+            margin-bottom: 17px;
             font-size :20px;
         }  
     }

@@ -7,3 +7,11 @@
 body {
     margin:0%;
 }
+
+
+
+@import "../utils/variables";
+
+main {
+  background-color: $color-background;
+}

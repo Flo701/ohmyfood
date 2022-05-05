@@ -118,15 +118,15 @@ footer a {
   margin-top: 0px;
 }
 .location_icon {
-  padding-left: 19px;
-  padding-right: 3px;
+  padding-left: 17px;
+  padding-right: 4px;
 }
 .location input {
   width: 130px;
   height: 30px;
   border: none;
   background-color: #EDE8E7;
-  padding-left: 5px;
+  padding-left: 4px;
 }
 .location_title {
   padding-left: 20px;
@@ -172,18 +172,54 @@ footer a {
 }
 .operating_text1 {
   padding-left: 22px;
+  padding-right: 3px;
+}
+@media screen and (max-width: 350px) {
+  .operating_text1 {
+    padding-left: 14px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .operating_text1 {
+    padding-left: 32px;
+    padding-right: 10px;
+  }
 }
 .operating_text2 {
   padding-left: 20px;
-  padding-right: 47px;
+  padding-right: 18px;
+}
+@media screen and (max-width: 350px) {
+  .operating_text2 {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .operating_text2 {
+    padding-left: 30px;
+    padding-right: 53px;
+  }
 }
 .operating_text3 {
   padding-left: 17px;
+  padding-right: 3px;
+}
+@media screen and (max-width: 350px) {
+  .operating_text3 {
+    padding-left: 9px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .operating_text3 {
+    padding-left: 27px;
+    padding-right: 10px;
+  }
 }
 .operating_button {
   display: flex;
   align-items: center;
-  width: 310px;
+  max-width: 330px;
+  width: 100%;
   height: 60px;
   border: 1px solid #F2F2F2;
   border-radius: 17px;
@@ -193,7 +229,7 @@ footer a {
 }
 @media screen and (max-width: 355px) {
   .operating_button {
-    width: 230px;
+    width: 260px;
   }
 }
 .operating_button:hover {
@@ -211,6 +247,11 @@ footer a {
   padding-left: 30px;
   color: grey;
 }
+@media screen and (min-width: 306px) and (max-width: 330px) {
+  .operating_icon {
+    padding-left: 27px;
+  }
+}
 
 .restaurants {
   height: auto;
@@ -223,28 +264,41 @@ footer a {
 .restaurants_cards {
   position: relative;
   width: 100%;
-  height: 300px;
-  max-width: 350px;
+  height: 440px;
+  max-width: 550px;
   margin: auto;
   background-color: white;
   box-shadow: 4px 4px 7px 1px #D9D9D9;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   transition: all 300ms;
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 600px) {
+  .restaurants_cards {
+    width: 430px;
+    height: 370px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .restaurants_cards {
+    width: 350px;
+    height: 312px;
+  }
+}
+@media screen and (max-width: 390px) {
   .restaurants_cards {
     height: 290px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 360px) {
   .restaurants_cards {
-    height: 270px;
+    height: 272px;
   }
 }
 @media screen and (max-width: 330px) {
   .restaurants_cards {
-    height: 250px;
+    height: 252px;
   }
 }
 @media screen and (max-width: 305px) {
@@ -258,11 +312,21 @@ footer a {
 }
 .restaurants_images {
   width: 100%;
-  height: 240px;
+  height: 370px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 600px) {
+  .restaurants_images {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .restaurants_images {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 390px) {
   .restaurants_images {
     height: 230px;
   }
@@ -290,9 +354,15 @@ footer a {
   padding-right: 12px;
 }
 .restaurants_text_name {
-  margin-bottom: 3px;
-  margin-top: 5px;
+  margin-bottom: 9px;
+  margin-top: 8px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .restaurants_text_name {
+    margin-bottom: 6px;
+    margin-top: 5px;
+  }
 }
 .restaurants_text_location {
   margin-bottom: 0px;
@@ -312,17 +382,38 @@ footer a {
 
 .image-menu {
   width: 100%;
-  height: 305px;
+  height: 490px;
   object-fit: cover;
+  object-position: bottom;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 670px) {
+  .image-menu {
+    height: 430px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .image-menu {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .image-menu {
+    height: 330px;
+  }
+}
+@media screen and (max-width: 430px) {
   .image-menu {
     height: 280px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .image-menu {
-    height: 225px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .image-menu {
+    height: 215px;
   }
 }
 

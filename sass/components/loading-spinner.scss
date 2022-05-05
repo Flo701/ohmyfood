@@ -12,14 +12,16 @@
     animation:loading 3s both;
     &::after {
         content:"";
-        border:7px solid $color-background-darken;
-        border-top-color: $color-primary;
-        border-right-color: $color-primary;
-        border-bottom-color: $color-primary;
+        // border:4px solid $color-background-darken;
+        border-top: 4px solid $color-primary;
+        // border-left: 4px solid transparent;
+        border-right: 4px solid $color-primary;
+        // border-bottom: 4px solid $color-primary;
         border-radius:50%;
-        width: 80px;
-        height: 80px;
-        animation:loading-spinner 3s ease-in-out both;         
+        width: 70px;
+        height: 70px;
+        animation:loading-spinner 1.5s ease-in-out both; 
+        animation-iteration-count: 2;        
     }
 }
  
@@ -33,11 +35,11 @@
 }
 
 @keyframes loading-spinner {
-    from {
+    0% {
         transform: rotate(0deg);
         visibility:visible;
     }
-    to {
+    100% {
         transform: rotate(360deg);
         visibility: hidden;
     }

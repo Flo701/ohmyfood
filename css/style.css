@@ -386,6 +386,9 @@ footer a {
   object-fit: cover;
   object-position: bottom;
 }
+.image-menu--2 {
+  object-position: center;
+}
 @media screen and (max-width: 670px) {
   .image-menu {
     height: 430px;
@@ -449,13 +452,13 @@ footer a {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
-  animation: animation-menu-appear 1s ease-in-out both;
+  animation: animation-menu-appear 1.5s ease-in-out both;
 }
-.menu_choice:hover .menu_choice_transition {
+.menu_choice:hover .menu_choice_check {
   margin-right: 0;
 }
-.menu_choice:hover .menu_choice_transition .fa-check {
-  animation: animation-menu 0.8s;
+.menu_choice:hover .menu_choice_check .fa-check {
+  animation: animation-menu 1s;
 }
 .menu_choice h4 {
   white-space: nowrap;
@@ -464,7 +467,7 @@ footer a {
   margin-top: 0;
   margin-bottom: 0;
 }
-.menu_choice_transition {
+.menu_choice_check {
   width: 65px;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -474,7 +477,7 @@ footer a {
   align-items: center;
   justify-content: center;
 }
-.menu_choice_transition .fa-check {
+.menu_choice_check .fa-check {
   background-color: white;
   width: 20px;
   height: 20px;
@@ -530,15 +533,19 @@ footer a {
 }
 
 .menu_choice1 {
-  animation-delay: 250ms;
-}
-
-.menu_choice2 {
   animation-delay: 500ms;
 }
 
+.menu_choice2 {
+  animation-delay: 1000ms;
+}
+
 .menu_choice3 {
-  animation-delay: 750ms;
+  animation-delay: 1500ms;
+}
+
+.menu_choice4 {
+  animation-delay: 2000ms;
 }
 
 @keyframes animation-menu-appear {
@@ -574,14 +581,13 @@ footer a {
 }
 .loading::after {
   content: "";
-  border: 7px solid #D9D9D9;
-  border-top-color: #9356DC;
-  border-right-color: #9356DC;
-  border-bottom-color: #9356DC;
+  border-top: 4px solid #9356DC;
+  border-right: 4px solid #9356DC;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: loading-spinner 3s ease-in-out both;
+  width: 70px;
+  height: 70px;
+  animation: loading-spinner 1.5s ease-in-out both;
+  animation-iteration-count: 2;
 }
 
 @keyframes loading {
@@ -593,11 +599,11 @@ footer a {
   }
 }
 @keyframes loading-spinner {
-  from {
+  0% {
     transform: rotate(0deg);
     visibility: visible;
   }
-  to {
+  100% {
     transform: rotate(360deg);
     visibility: hidden;
   }
@@ -628,7 +634,6 @@ footer a {
   padding-right: 1px;
   font-size: 22px;
   font-weight: 300;
-  transition: all 200ms ease;
 }
 .restaurants .heart-2, .menu .heart-2 {
   color: transparent;
@@ -636,7 +641,7 @@ footer a {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 400ms ease;
+  transition: all 200ms ease;
   position: absolute;
   top: 0;
   bottom: 0;

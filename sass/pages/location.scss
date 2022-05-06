@@ -5,6 +5,9 @@
     height :285px;
     background-color: $color-background;
     padding-bottom: 10px;
+    @media screen and (min-width:992px) {
+        height : 220px;
+    }
     @media screen and(min-width:768px) and (max-width:991px) {
         height: 303px;
     }
@@ -31,8 +34,14 @@
         background-color: $color-location-city;
         padding-left: 4px;
     }
+    &_text {
+        @media screen and (min-width :992px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly; 
+        }
+    }
     &_title {
-        
         padding-left: 20px;
         padding-right:20px;
         padding-top :20px;
@@ -40,31 +49,26 @@
         height: auto;
         background-color:$color-background;
         text-align : center;
+        @media screen and (min-width :992px) {
+            // position:relative;
+            // text-align: left;
+        }
         &_p {
             margin-bottom: 17px;
             font-size :20px;
         }  
     }
-    //&_button {
-        //display: flex;
-        //justify-content: center;
-        //:40px;
-        //align-items: center;
-        //width: 195px;
-        //margin: auto;
-        //border-radius: 20px;
-        //border:none;
-        //background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
-        //box-shadow:0px 0px 11px 0px rgba(213 182 179);
-        //color: white;
-        //transition : all 200ms;
-        //&:hover {
-            //@include button-hover;
-            //cursor:pointer;
-        //}
-        
-    //}       
+    &_button {
+        @media screen and (min-width :992px) {
+            margin-left: 0;   
+        }  
+    }
 }
+
+
+
+
+
 
 
     

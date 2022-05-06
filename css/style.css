@@ -24,7 +24,7 @@ header h1, h2 {
   font-size: 24px;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   header h1, h2 {
     font-size: 30px;
   }
@@ -73,7 +73,7 @@ footer a {
 .header i {
   font-size: 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .header i {
     font-size: 25px;
   }
@@ -116,6 +116,11 @@ footer a {
   background-color: #F2F2F2;
   padding-bottom: 10px;
 }
+@media screen and (min-width: 992px) {
+  .location {
+    height: 220px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .location {
     height: 303px;
@@ -150,6 +155,13 @@ footer a {
   background-color: #EDE8E7;
   padding-left: 4px;
 }
+@media screen and (min-width: 992px) {
+  .location_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 .location_title {
   padding-left: 20px;
   padding-right: 20px;
@@ -163,27 +175,58 @@ footer a {
   margin-bottom: 17px;
   font-size: 20px;
 }
+@media screen and (min-width: 992px) {
+  .location_button {
+    margin-left: 0;
+  }
+}
 
 .operating {
   height: 355px;
   padding-top: 9px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: white;
+}
+@media screen and (min-width: 992px) {
+  .operating {
+    height: 245px;
+  }
 }
 .operating_title {
   margin-bottom: 24px;
+}
+@media screen and (min-width: 992px) {
+  .operating_title {
+    margin-bottom: 40px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .operating_steps {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .operating_choose, .operating_compose, .operating_enjoy {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: -12px;
+}
+@media screen and (min-width: 992px) {
+  .operating_choose, .operating_compose, .operating_enjoy {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+}
+.operating_choose i {
+  font-size: 18px;
 }
 .operating_number {
-  margin-right: -10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,51 +236,62 @@ footer a {
   border-radius: 50%;
   color: white;
   background-color: #9356DC;
-  z-index: 1;
+  position: absolute;
+  left: -12px;
 }
 .operating_text1 {
-  padding-left: 22px;
-  padding-right: 3px;
+  padding-left: 12px;
+  padding-right: 5px;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 355px) {
   .operating_text1 {
+    padding-left: 16px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .operating_text1 {
+    padding-left: 27px;
+    padding-right: 12px;
+  }
+}
+.operating_text2 {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 355px) {
+  .operating_text2 {
     padding-left: 14px;
   }
 }
 @media screen and (max-width: 305px) {
-  .operating_text1 {
-    padding-left: 32px;
-    padding-right: 10px;
+  .operating_text2 {
+    padding-left: 25px;
+    padding-right: 63px;
   }
 }
-.operating_text2 {
-  padding-left: 20px;
-  padding-right: 18px;
-}
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 992px) and (max-width: 1320px) {
   .operating_text2 {
-    padding-left: 12px;
-  }
-}
-@media screen and (max-width: 305px) {
-  .operating_text2 {
-    padding-left: 30px;
-    padding-right: 53px;
+    padding-right: 63px;
   }
 }
 .operating_text3 {
-  padding-left: 17px;
-  padding-right: 3px;
+  padding-left: 7px;
+  padding-right: 5px;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 355px) {
   .operating_text3 {
-    padding-left: 9px;
+    padding-left: 11px;
   }
 }
 @media screen and (max-width: 305px) {
   .operating_text3 {
-    padding-left: 27px;
-    padding-right: 10px;
+    padding-left: 22px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .operating_text3 {
+    padding-left: 17px;
   }
 }
 .operating_button {
@@ -251,16 +305,21 @@ footer a {
   background-color: #F2F2F2;
   box-shadow: 4px 4px 7px 1px #D9D9D9;
   transition: all 200ms;
+  position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 992px) and (max-width: 1320px) {
   .operating_button {
-    max-width: 400px;
-    padding-right: 20px;
+    width: 249px;
   }
 }
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 767px) {
   .operating_button {
     width: 260px;
+  }
+}
+@media screen and (max-width: 305px) {
+  .operating_button {
+    width: 231px;
   }
 }
 .operating_button:hover {
@@ -275,15 +334,20 @@ footer a {
 }
 .operating_icon {
   transition: all 200ms;
-  padding-left: 30px;
+  padding-left: 38px;
   color: grey;
 }
-@media screen and (min-width: 306px) and (max-width: 330px) {
+@media screen and (min-width: 992px) {
   .operating_icon {
-    padding-left: 27px;
+    padding-left: 2;
+    padding-right: 5px;
   }
 }
-
+@media screen and (min-width: 306px) and (max-width: 355px) {
+  .operating_icon {
+    padding-left: 29px;
+  }
+}
 .restaurants {
   height: auto;
   background-color: #F2F2F2;
@@ -294,9 +358,8 @@ footer a {
 }
 .restaurants_cards {
   position: relative;
-  width: 400px;
-  height: 340px;
-  max-width: 550px;
+  width: 330px;
+  height: 290px;
   margin: auto;
   background-color: white;
   box-shadow: 4px 4px 7px 1px #D9D9D9;
@@ -304,7 +367,32 @@ footer a {
   margin-bottom: 30px;
   transition: all 300ms;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 992px) {
+  .restaurants_cards {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .restaurants_cards {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .restaurants_cards {
+    width: 450px;
+    height: 364px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+}
+@media screen and (min-width: 1860px) {
+  .restaurants_cards {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
   .restaurants_cards {
     width: 330px;
     height: 290px;
@@ -313,35 +401,28 @@ footer a {
 }
 @media screen and (max-width: 600px) {
   .restaurants_cards {
-    width: 400px;
-    height: 340px;
+    width: 330px;
+    height: 290px;
   }
 }
 @media screen and (max-width: 500px) {
   .restaurants_cards {
-    width: 350px;
-    height: 312px;
+    width: 330px;
+    height: 290px;
   }
 }
 @media screen and (max-width: 390px) {
   .restaurants_cards {
-    height: 290px;
+    height: 240px;
     width: 100%;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 1320px) {
   .restaurants_cards {
-    height: 272px;
-  }
-}
-@media screen and (max-width: 330px) {
-  .restaurants_cards {
-    height: 252px;
-  }
-}
-@media screen and (max-width: 305px) {
-  .restaurants_cards {
-    height: 235px;
+    width: 430px;
+    height: 350px;
+    margin-right: 35px;
+    margin-left: 35px;
   }
 }
 .restaurants_cards:hover {
@@ -349,15 +430,27 @@ footer a {
   box-shadow: 4px 4px 7px 1px #a6a6a6;
 }
 .restaurants_title {
+  padding-left: 10px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 992px) {
+  .restaurants_title {
+    padding-left: 20px;
+  }
 }
 .restaurants_images {
   width: 100%;
-  height: 270px;
+  height: 220px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 1320px) {
+  .restaurants_images {
+    width: 450px;
+    height: 295px;
+  }
+}
+@media screen and (min-width: 768px) {
   .restaurants_images {
     width: 330px;
     height: 220px;
@@ -365,32 +458,28 @@ footer a {
 }
 @media screen and (max-width: 600px) {
   .restaurants_images {
-    height: 270px;
+    height: 220px;
   }
 }
 @media screen and (max-width: 500px) {
   .restaurants_images {
-    height: 250px;
+    height: 220px;
   }
 }
 @media screen and (max-width: 390px) {
   .restaurants_images {
-    height: 230px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .restaurants_images {
-    height: 210px;
-  }
-}
-@media screen and (max-width: 330px) {
-  .restaurants_images {
-    height: 190px;
+    height: 175px;
   }
 }
 @media screen and (max-width: 305px) {
   .restaurants_images {
     height: 175px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .restaurants_images {
+    width: 430px;
+    height: 280px;
   }
 }
 .restaurants_text {
@@ -404,12 +493,6 @@ footer a {
   margin-bottom: 9px;
   margin-top: 8px;
   font-weight: bold;
-}
-@media screen and (max-width: 500px) {
-  .restaurants_text_name {
-    margin-bottom: 6px;
-    margin-top: 5px;
-  }
 }
 .restaurants_text_location {
   margin-bottom: 0px;
@@ -438,6 +521,28 @@ footer a {
     padding-right: 20px;
   }
 }
+@media screen and (min-width: 900px) and (max-width: 991px) {
+  .restaurants_allcards {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants_allcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .restaurants_allcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
 .image-menu {
   width: 100%;
@@ -453,13 +558,14 @@ footer a {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 485px;
-    height: 315px;
+    width: 475px;
+    height: 305px;
     background: white;
+    box-shadow: 4px 4px 7px 4px #D9D9D9;
     border-radius: 31px;
     position: absolute;
     z-index: 2;
-    top: 90px;
+    top: 95px;
     left: 50%;
     transform: translateX(-50%);
     /* right: auto; */
@@ -472,7 +578,7 @@ footer a {
     width: 450px;
     height: 280px;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 18px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -510,9 +616,9 @@ footer a {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .menu {
-    padding-left: 70px;
+    padding-left: 80px;
     padding-top: 360px;
-    padding-right: 70px;
+    padding-right: 80px;
     margin-top: 0px;
     border-radius: 0;
   }
@@ -715,6 +821,13 @@ footer a {
     border-radius: 35px;
   }
 }
+@media screen and (min-width: 992px) {
+  .button {
+    width: 250px;
+    height: 57px;
+    border-radius: 35px;
+  }
+}
 .button:hover {
   cursor: pointer;
   transform: scale(1.02);
@@ -730,7 +843,7 @@ footer a {
   font-weight: 300;
   transition: all 300ms ease-in-out;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .restaurants .heart-1, .menu .heart-1 {
     font-size: 30px;
   }
@@ -754,7 +867,7 @@ footer a {
   left: 0;
   right: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .restaurants .heart-2, .menu .heart-2 {
     font-size: 30px;
   }

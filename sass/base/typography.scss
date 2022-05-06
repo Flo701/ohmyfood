@@ -6,7 +6,7 @@ header h1, h2 {
     font-family: "Shrikhand",cursive;
     font-size: 24px;
     font-weight: 500;
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    @media screen and (min-width: 768px) {
         font-size: 30px;
     }
 }

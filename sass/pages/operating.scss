@@ -3,21 +3,42 @@
     height:355px;
     //height : 230px;
     padding-top: 9px;
-    padding-left : 20px;
-    padding-right: 20px; 
+    padding-left : 25px;
+    padding-right: 25px; 
     background-color: white;
+    @media screen and (min-width:992px) {
+        height: 245px;
+    }
     &_title { 
         margin-bottom :24px;
+        @media screen and (min-width:992px) {
+            margin-bottom: 40px;
+            padding-left: 20px;
         }
+        }
+    &_steps {
+        @media screen and (min-width:992px) {
+            display: flex;
+            justify-content: space-evenly;
+        }  
+    }
     &_choose, &_compose, &_enjoy {
         @include flexbox-center;
         margin-bottom:30px;
-        margin-left:auto;
-        margin-right: auto;
+        margin-right: -12px;
+        @media screen and (min-width:992px) {
+            margin-left:0;
+            margin-right:0;
+            justify-content: space-evenly;
+            width : 30%;
+            // position: relative;
         }
+    }
+    &_choose i {
+        font-size : 18px;
+    }
     &_number {
-        //essai//
-        margin-right: -10px;
+        
         //essai//
         @include flexbox-center;
         width:30px;
@@ -26,66 +47,80 @@
         border-radius: 50%;
         color: white;
         background-color: $color-primary;
-        //position:relative;
-        //right:115px;
-        z-index:1;
+        position:absolute;
+        left:-12px;
+        
+        @media screen and (min-width:992px) {
+            // position: absolute;
+
+        }
         }
     &_text1 {
-        padding-left:22px;
-        padding-right: 3px;
-        @media screen and (max-width:350px) {
-            padding-left: 14px;
-        }
-        @media screen and (max-width:305px){
-            padding-left: 32px;
-            padding-right:10px;
-        }
-    }
-    &_text2 {
-        padding-left:20px;
-        padding-right:18px;
-        @media screen and (max-width:350px) {
-            padding-left: 12px;
-        }
-        @media screen and (max-width:305px){
-            padding-left: 30px;
-            padding-right:53px;
-        }
-    }
-    &_text3 {
-        padding-left:17px;
-        padding-right: 3px;
-        @media screen and (max-width:350px) {
-            padding-left: 9px;
+        padding-left:12px;
+        padding-right: 5px;
+        @media screen and (max-width:355px) {
+            padding-left: 16px;
         }
         @media screen and (max-width:305px){
             padding-left: 27px;
-            padding-right:10px;
+            padding-right:12px;
+        }
+        @media screen and (min-width:768px) and (max-width:991px) {
+            // padding-left: 37px;
+        }
+    }
+    &_text2 {
+        padding-left:10px;
+        padding-right:20px;
+        @media screen and (max-width:355px) {
+            padding-left: 14px;
+        }
+        @media screen and (max-width:305px){
+            padding-left: 25px;
+            padding-right:63px;
+        }
+        @media screen and (min-width:768px) and (max-width:991px) {
+            // padding-left: 33px;
+        }
+        @media screen and (min-width:992px) and (max-width:1320px) {
+            padding-right:63px;
+        }
+    }
+    &_text3 {
+        padding-left:7px;
+        padding-right: 5px;
+        @media screen and (max-width:355px) {
+            padding-left: 11px;
+        }
+        @media screen and (max-width:305px){
+            padding-left: 22px;
+            padding-right:15px;
+        }
+        @media screen and (min-width:992px) {
+            padding-left: 17px;
         }
     }
     &_button {
         display: flex;
         align-items: center;
-        // width: 310px;
         max-width:330px;
         width: 100%;
         height:60px;
         border:1px solid $color-background;
         border-radius:27px;
-        background-color: $color-background;
-        //position:absolute; 
+        background-color: $color-background; 
         box-shadow: 4px 4px 7px 1px $color-background-darken; 
         transition: all 200ms;
-        @media screen and (min-width:768px) and (max-width:991px) {
-            max-width:400px;
-            padding-right: 20px;
+        position:relative;
+        
+        @media screen and (min-width:992px) and (max-width:1320px) {
+            width:249px;
         }
-        // @media screen and (min-width:767px) and (max-width:799px) {
-            // width: 220px;
-            // padding-right: 70px;
-        // }
-        @media screen and (max-width: 355px) {
+        @media screen and (max-width: 767px) {
             width : 260px;
+        }
+        @media screen and (max-width:305px) {
+            width:231px;
         }
         &:hover {
             cursor: pointer;
@@ -100,10 +135,20 @@
     }
     &_icon {
     transition: all 200ms;    
-    padding-left:30px;
+    padding-left:38px;
     color: grey;
-        @media screen and (min-width:306px) and (max-width:330px) {
-            padding-left:27px;
+        @media screen and (min-width: 992px) {
+            padding-left:2;
+            padding-right: 5px;
+        }
+        @media screen and (min-width:306px) and (max-width:355px) {
+            padding-left:29px;
+        }
+        @media screen and (min-width:768px) and (max-width:991px) {
+            // padding-left :52px;
+        }
+        @media screen and (min-width:331px) and (max-width:355px) {
+            // padding-left: 29px;
         }
     } 
 }

@@ -1,7 +1,5 @@
 .operating {
-    //essai//
     height:355px;
-    //height : 230px;
     padding-top: 9px;
     padding-left : 25px;
     padding-right: 25px; 
@@ -11,15 +9,18 @@
     }
     &_title { 
         margin-bottom :24px;
+        padding-left: 0px;
         @media screen and (min-width:992px) {
             margin-bottom: 40px;
             padding-left: 20px;
         }
-        }
+    }
     &_steps {
         @media screen and (min-width:992px) {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            padding-left:55px;
+            padding-right:55px;
         }  
     }
     &_choose, &_compose, &_enjoy {
@@ -31,15 +32,12 @@
             margin-right:0;
             justify-content: space-evenly;
             width : 30%;
-            // position: relative;
         }
     }
     &_choose i {
         font-size : 18px;
     }
     &_number {
-        
-        //essai//
         @include flexbox-center;
         width:30px;
         height:30px;
@@ -49,55 +47,35 @@
         background-color: $color-primary;
         position:absolute;
         left:-12px;
-        
-        @media screen and (min-width:992px) {
-            // position: absolute;
-
-        }
         }
     &_text1 {
         padding-left:12px;
         padding-right: 5px;
-        @media screen and (max-width:355px) {
-            padding-left: 16px;
-        }
-        @media screen and (max-width:305px){
+        @media screen and (max-width:315px) {
             padding-left: 27px;
             padding-right:12px;
-        }
-        @media screen and (min-width:768px) and (max-width:991px) {
-            // padding-left: 37px;
-        }
+        } 
     }
     &_text2 {
         padding-left:10px;
         padding-right:20px;
-        @media screen and (max-width:355px) {
-            padding-left: 14px;
-        }
-        @media screen and (max-width:305px){
+        @media screen and (max-width:315px) {
             padding-left: 25px;
             padding-right:63px;
         }
-        @media screen and (min-width:768px) and (max-width:991px) {
-            // padding-left: 33px;
-        }
-        @media screen and (min-width:992px) and (max-width:1320px) {
+        @media screen and (min-width:992px) and (max-width:1319px) {
             padding-right:63px;
         }
     }
     &_text3 {
         padding-left:7px;
         padding-right: 5px;
-        @media screen and (max-width:355px) {
-            padding-left: 11px;
-        }
-        @media screen and (max-width:305px){
+        @media screen and (max-width:315px) {
             padding-left: 22px;
             padding-right:15px;
         }
-        @media screen and (min-width:992px) {
-            padding-left: 17px;
+        @media screen and (min-width:992px) and (max-width:1319px) {
+            padding-right:20px;
         }
     }
     &_button {
@@ -112,15 +90,14 @@
         box-shadow: 4px 4px 7px 1px $color-background-darken; 
         transition: all 200ms;
         position:relative;
-        
-        @media screen and (min-width:992px) and (max-width:1320px) {
-            width:249px;
+        @media screen and (max-width:315px) {
+            width:231px;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 316px) {
             width : 260px;
         }
-        @media screen and (max-width:305px) {
-            width:231px;
+        @media screen and (min-width:992px) and (max-width:1320px) {
+            width:249px;
         }
         &:hover {
             cursor: pointer;
@@ -137,18 +114,16 @@
     transition: all 200ms;    
     padding-left:38px;
     color: grey;
-        @media screen and (min-width: 992px) {
-            padding-left:2;
-            padding-right: 5px;
-        }
         @media screen and (min-width:306px) and (max-width:355px) {
             padding-left:29px;
         }
-        @media screen and (min-width:768px) and (max-width:991px) {
-            // padding-left :52px;
-        }
-        @media screen and (min-width:331px) and (max-width:355px) {
-            // padding-left: 29px;
+        @media screen and (min-width: 992px) {
+            padding-left:2;
+            padding-right: 5px;
+        } 
+        @media screen and (min-width:1320px){
+            padding-left: 30px;
+            padding-right: 2px;
         }
     } 
 }

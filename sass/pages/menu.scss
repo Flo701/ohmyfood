@@ -1,79 +1,108 @@
 .image-menu {
     width: 100%;
-    height: 350px;
+    height: 360px;
     object-fit: cover;
-    object-position: bottom;
-    &--2 {
-        object-position: center;
+    display: block;
+    &--4 {
+        object-position: bottom;
+    }
+    @media screen and (max-width: 300px) {
+        height: 190px;
+    }
+    @media screen and (min-width:301px) and (max-width: 370px) {
+        height: 210px;
+    }
+    @media screen and (min-width: 371px) and (max-width: 430px) {
+        height: 240px;
+    }
+    @media screen and (min-width: 431px) and (max-width:530px) {
+        height:265px;    
+    }
+    @media screen and (min-width: 520px) and (max-width:600px) {
+        height:310px;
+    }
+    @media screen and (min-width:768px) and (max-width:991px) {
+        width:450px;
+        height:280px;
+        object-fit: cover;
+        border-radius: 22px;
+    }
+    @media screen and (min-width:992px) {
+        width:100%;
+        height: 65vh;
     }
     &-background {
-        @media screen and (min-width:768px) and (max-width:992px) {
+        @media screen and (min-width:768px) and (max-width:991px) {
         display: flex;
         justify-content: center;
         margin: auto;
-        width:475px;
-        height:305px;
-        // padding-top:20px;
+        width:465px;
+        height:295px;
         background: white;
         box-shadow:4px 4px 7px 4px $color-background-darken;
         border-radius: 31px;
         position: absolute;
         z-index: 2;
-        top: 95px;
+        top: 110px;
         left: 50%;
         transform: translateX(-50%);
-        /* right: auto; */
         margin: auto;
         align-items: center;
-    }
-    }
-    @media screen and (min-width:768px) and (max-width:992px) {
-        width:450px;
-        height:280px;
-        object-fit: cover;
-        border-radius: 18px;
-        // margin-top: 30px;
-    }
-    @media screen and (max-width:530px) {
-        height:245px;    
-    }
-    @media screen and (max-width: 430px) {
-        height : 230px;
-    }
-    @media screen and (max-width: 370px) {
-        height : 200px;
-    }
-    @media screen and (max-width: 300px) {
-        height : 185px;
-    }
+        }
+    }  
 }
 
 .menu {
-    margin-top: -40px;
     position: relative;
+    margin-top: -54px;
     width: 100%;
     height: auto;
-    padding-left: 20px;
-    padding-right:20px;
-    padding-top: 20px;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 30px;
     padding-bottom: 20px;
-    border-radius: 35px 35px 0 0;
+    border-radius: 45px 45px 0 0;
     background-color: $color-background;
-    @media screen and (min-width:768px) and (max-width:992px) {
-        padding-left: 80px;
-        padding-top: 360px;;
+    @media screen and (max-width:450px) {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    @media screen and (min-width:768px) and (max-width:991px) {
+        padding-top: 360px;
+        padding-left:80px;
         padding-right: 80px;
         margin-top: 0px;
         border-radius: 0;
+        position: initial;
     }
     &_title {
         font-size: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-bottom:10px;
+        @media screen and (min-width:768px) and (max-width:991px) {
+           margin-top: 15px;
+           width:600px;
+           margin-left:auto;  
+           margin-right: auto;  
+        }
+        & h2 {
+            padding-right: 25px;
+        }
     }
-    & h3 {
-        font-weight: 500;
+    &_card {
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center ;            
+        }
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
     }
     &_choice {
         display: flex;
@@ -87,6 +116,12 @@
         overflow: hidden;
         cursor: pointer;
         animation: animation-menu-appear 1.5s ease-in-out both;
+        @media screen and (min-width:768px) and (max-width:991px) {
+            width: 600px;
+        }
+        @media screen and (min-width:992px) {
+            width:510px;
+        }
         &:hover {
             .menu_choice_check {
                 margin-right :0;
@@ -120,8 +155,6 @@
             }
         }
         &_text {
-            // white-space:nowrap;
-            // text-overflow: ellipsis;
             overflow: hidden;
             width:100%;
             padding-top:10px;
@@ -130,9 +163,6 @@
             padding-right:15px;
         }
         &_price {
-            // white-space:nowrap;
-            // overflow: hidden;
-            // text-overflow: ellipsis;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -142,7 +172,6 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 margin :0;
-                //margin-top:0px;
             }
             & span {
                 padding-left: 9px;
@@ -152,9 +181,18 @@
     }
     &_starter, &_maincourse, &_dessert {
         margin-bottom : 35px;
+        @media screen and (min-width:768px) and (max-width:991px) {
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: 992px) {
+            margin-left : 20px;
+            margin-right:20px;
+            // width:30vh;
+        }
         & h3 {
             position: relative;
-            margin-bottom: 25px;
+            font-weight: 500;
+            margin-bottom: 27px;
             &::after {
                 content: "";
                 position:absolute;
@@ -169,6 +207,8 @@
     &_button {
         background-color: $color-background;
         padding-bottom: 50px;
+        padding-top:26px;
+        padding-bottom:65px;
     }
 }
 

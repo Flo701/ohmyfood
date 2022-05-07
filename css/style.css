@@ -75,7 +75,7 @@ footer a {
 }
 @media screen and (min-width: 768px) {
   .header i {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -195,6 +195,7 @@ footer a {
 }
 .operating_title {
   margin-bottom: 24px;
+  padding-left: 0px;
 }
 @media screen and (min-width: 992px) {
   .operating_title {
@@ -205,7 +206,9 @@ footer a {
 @media screen and (min-width: 992px) {
   .operating_steps {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 .operating_choose, .operating_compose, .operating_enjoy {
@@ -243,12 +246,7 @@ footer a {
   padding-left: 12px;
   padding-right: 5px;
 }
-@media screen and (max-width: 355px) {
-  .operating_text1 {
-    padding-left: 16px;
-  }
-}
-@media screen and (max-width: 305px) {
+@media screen and (max-width: 315px) {
   .operating_text1 {
     padding-left: 27px;
     padding-right: 12px;
@@ -258,18 +256,13 @@ footer a {
   padding-left: 10px;
   padding-right: 20px;
 }
-@media screen and (max-width: 355px) {
-  .operating_text2 {
-    padding-left: 14px;
-  }
-}
-@media screen and (max-width: 305px) {
+@media screen and (max-width: 315px) {
   .operating_text2 {
     padding-left: 25px;
     padding-right: 63px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1320px) {
+@media screen and (min-width: 992px) and (max-width: 1319px) {
   .operating_text2 {
     padding-right: 63px;
   }
@@ -278,20 +271,15 @@ footer a {
   padding-left: 7px;
   padding-right: 5px;
 }
-@media screen and (max-width: 355px) {
-  .operating_text3 {
-    padding-left: 11px;
-  }
-}
-@media screen and (max-width: 305px) {
+@media screen and (max-width: 315px) {
   .operating_text3 {
     padding-left: 22px;
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1319px) {
   .operating_text3 {
-    padding-left: 17px;
+    padding-right: 20px;
   }
 }
 .operating_button {
@@ -307,19 +295,19 @@ footer a {
   transition: all 200ms;
   position: relative;
 }
-@media screen and (min-width: 992px) and (max-width: 1320px) {
+@media screen and (max-width: 315px) {
   .operating_button {
-    width: 249px;
+    width: 231px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 316px) {
   .operating_button {
     width: 260px;
   }
 }
-@media screen and (max-width: 305px) {
+@media screen and (min-width: 992px) and (max-width: 1320px) {
   .operating_button {
-    width: 231px;
+    width: 249px;
   }
 }
 .operating_button:hover {
@@ -337,22 +325,29 @@ footer a {
   padding-left: 38px;
   color: grey;
 }
+@media screen and (min-width: 306px) and (max-width: 355px) {
+  .operating_icon {
+    padding-left: 29px;
+  }
+}
 @media screen and (min-width: 992px) {
   .operating_icon {
     padding-left: 2;
     padding-right: 5px;
   }
 }
-@media screen and (min-width: 306px) and (max-width: 355px) {
+@media screen and (min-width: 1320px) {
   .operating_icon {
-    padding-left: 29px;
+    padding-left: 30px;
+    padding-right: 2px;
   }
 }
+
 .restaurants {
   height: auto;
   background-color: #F2F2F2;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -367,62 +362,34 @@ footer a {
   margin-bottom: 30px;
   transition: all 300ms;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 390px) {
   .restaurants_cards {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1030px) {
-  .restaurants_cards {
-    margin-left: 35px;
-    margin-right: 35px;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .restaurants_cards {
-    width: 450px;
-    height: 364px;
-    margin-right: 35px;
-    margin-left: 35px;
-  }
-}
-@media screen and (min-width: 1860px) {
-  .restaurants_cards {
-    margin-right: 50px;
-    margin-left: 50px;
+    width: 100%;
+    height: 240px;
   }
 }
 @media screen and (min-width: 768px) {
   .restaurants_cards {
-    width: 330px;
-    height: 290px;
     margin-bottom: 45px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) and (max-width: 1050px) {
   .restaurants_cards {
-    width: 330px;
-    height: 290px;
+    width: 300px;
+    height: 272px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 992px) {
   .restaurants_cards {
-    width: 330px;
-    height: 290px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .restaurants_cards {
-    height: 240px;
-    width: 100%;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1320px) {
   .restaurants_cards {
-    width: 430px;
-    height: 350px;
-    margin-right: 35px;
-    margin-left: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 .restaurants_cards:hover {
@@ -430,7 +397,7 @@ footer a {
   box-shadow: 4px 4px 7px 1px #a6a6a6;
 }
 .restaurants_title {
-  padding-left: 10px;
+  padding-left: 0px;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 992px) {
@@ -444,42 +411,15 @@ footer a {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-@media screen and (min-width: 1320px) {
-  .restaurants_images {
-    width: 450px;
-    height: 295px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .restaurants_images {
-    width: 330px;
-    height: 220px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .restaurants_images {
-    height: 220px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .restaurants_images {
-    height: 220px;
-  }
-}
 @media screen and (max-width: 390px) {
   .restaurants_images {
     height: 175px;
   }
 }
-@media screen and (max-width: 305px) {
+@media screen and (min-width: 768px) and (max-width: 1050px) {
   .restaurants_images {
-    height: 175px;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .restaurants_images {
-    width: 430px;
-    height: 280px;
+    width: 300px;
+    height: 205px;
   }
 }
 .restaurants_text {
@@ -508,6 +448,12 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 350px) and (max-width: 470px) {
+  .restaurants_allcards {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants_allcards {
@@ -539,88 +485,105 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 .image-menu {
   width: 100%;
-  height: 350px;
+  height: 360px;
   object-fit: cover;
+  display: block;
+}
+.image-menu--4 {
   object-position: bottom;
 }
-.image-menu--2 {
-  object-position: center;
+@media screen and (max-width: 300px) {
+  .image-menu {
+    height: 190px;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 301px) and (max-width: 370px) {
+  .image-menu {
+    height: 210px;
+  }
+}
+@media screen and (min-width: 371px) and (max-width: 430px) {
+  .image-menu {
+    height: 240px;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 530px) {
+  .image-menu {
+    height: 265px;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 600px) {
+  .image-menu {
+    height: 310px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image-menu {
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .image-menu {
+    width: 100%;
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .image-menu-background {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 475px;
-    height: 305px;
+    width: 465px;
+    height: 295px;
     background: white;
     box-shadow: 4px 4px 7px 4px #D9D9D9;
     border-radius: 31px;
     position: absolute;
     z-index: 2;
-    top: 95px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
-    /* right: auto; */
     margin: auto;
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .image-menu {
-    width: 450px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 18px;
-  }
-}
-@media screen and (max-width: 530px) {
-  .image-menu {
-    height: 245px;
-  }
-}
-@media screen and (max-width: 430px) {
-  .image-menu {
-    height: 230px;
-  }
-}
-@media screen and (max-width: 370px) {
-  .image-menu {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .image-menu {
-    height: 185px;
-  }
-}
 
 .menu {
-  margin-top: -40px;
   position: relative;
+  margin-top: -54px;
   width: 100%;
   height: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
-  border-radius: 35px 35px 0 0;
+  border-radius: 45px 45px 0 0;
   background-color: #F2F2F2;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (max-width: 450px) {
   .menu {
-    padding-left: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu {
     padding-top: 360px;
+    padding-left: 80px;
     padding-right: 80px;
     margin-top: 0px;
     border-radius: 0;
+    position: initial;
   }
 }
 .menu_title {
@@ -628,9 +591,32 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
-.menu h3 {
-  font-weight: 500;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu_title {
+    margin-top: 15px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.menu_title h2 {
+  padding-right: 25px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .menu_choice {
   display: flex;
@@ -644,6 +630,16 @@ footer a {
   overflow: hidden;
   cursor: pointer;
   animation: animation-menu-appear 1.5s ease-in-out both;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu_choice {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_choice {
+    width: 510px;
+  }
 }
 .menu_choice:hover .menu_choice_check {
   margin-right: 0;
@@ -706,9 +702,21 @@ footer a {
 .menu_starter, .menu_maincourse, .menu_dessert {
   margin-bottom: 35px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu_starter, .menu_maincourse, .menu_dessert {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_starter, .menu_maincourse, .menu_dessert {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .menu_starter h3, .menu_maincourse h3, .menu_dessert h3 {
   position: relative;
-  margin-bottom: 25px;
+  font-weight: 500;
+  margin-bottom: 27px;
 }
 .menu_starter h3::after, .menu_maincourse h3::after, .menu_dessert h3::after {
   content: "";
@@ -722,6 +730,8 @@ footer a {
 .menu_button {
   background-color: #F2F2F2;
   padding-bottom: 50px;
+  padding-top: 26px;
+  padding-bottom: 65px;
 }
 
 .menu_choice1 {
@@ -773,12 +783,12 @@ footer a {
 }
 .loading::after {
   content: "";
-  border-top: 4px solid #9356DC;
-  border-right: 4px solid #9356DC;
+  border-top: 5px solid #9356DC;
+  border-right: 5px solid #9356DC;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: loading-spinner 1.5s ease-in-out both;
+  width: 85px;
+  height: 85px;
+  animation: loading-spinner 1.5s linear both;
   animation-iteration-count: 2;
 }
 
@@ -838,14 +848,13 @@ footer a {
 .restaurants .heart-1, .menu .heart-1 {
   position: relative;
   padding-right: 2px;
-  padding-left: 26px;
   font-size: 22px;
   font-weight: 300;
   transition: all 300ms ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .restaurants .heart-1, .menu .heart-1 {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .restaurants .heart-1:hover, .menu .heart-1:hover {
@@ -853,7 +862,6 @@ footer a {
 }
 .restaurants .heart-2, .menu .heart-2 {
   padding-right: 2px;
-  padding-left: 26px;
   font-size: 22px;
   color: transparent;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
@@ -869,7 +877,7 @@ footer a {
 }
 @media screen and (min-width: 768px) {
   .restaurants .heart-2, .menu .heart-2 {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .restaurants .heart-2:hover, .menu .heart-2:hover {

@@ -7,31 +7,36 @@
   /* Safari/Chrome, autres WebKit */
 }
 
-body {
-  margin: 0%;
-}
-
 main {
   background-color: #F2F2F2;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 body {
   font-family: "Roboto", sans-serif;
 }
 
-header h1, h2 {
+h1, h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 24px;
   font-weight: 500;
-}
-@media screen and (min-width: 768px) {
-  header h1, h2 {
-    font-size: 30px;
-  }
 }
 
 h3 {
   font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 22px;
+  }
 }
 
 h4 {
@@ -373,7 +378,7 @@ footer a {
   margin-bottom: 30px;
   transition: all 300ms;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
   .restaurants_cards {
     width: 100%;
     height: 240px;
@@ -422,7 +427,7 @@ footer a {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
   .restaurants_images {
     height: 175px;
   }
@@ -512,7 +517,7 @@ footer a {
 }
 @media screen and (min-width: 1500px) {
   .image-menu--4 {
-    object-position: 0 -550px;
+    object-position: 0 -500px;
   }
 }
 @media screen and (max-width: 300px) {
@@ -551,7 +556,22 @@ footer a {
 @media screen and (min-width: 992px) {
   .image-menu {
     width: 100%;
-    height: 45vh;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .image-menu {
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .image-menu {
+    height: 520px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .image-menu {
+    height: 560px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -659,7 +679,7 @@ footer a {
 }
 @media screen and (min-width: 992px) {
   .menu_choice {
-    width: 510px;
+    width: 550px;
   }
 }
 .menu_choice:hover .menu_choice_check {

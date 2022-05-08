@@ -6,7 +6,7 @@
     &--4 {
         object-position: bottom;
         @media screen and (min-width:1500px) {
-            object-position: 0 -550px;
+            object-position: 0 -500px;
         }
     }
     @media screen and (max-width: 300px) {
@@ -24,6 +24,12 @@
     @media screen and (min-width: 520px) and (max-width:600px) {
         height:310px;
     }
+    // @media screen and (max-width:499px) {
+        // height: 20vh;
+    // }
+    // @media screen and (min-width:500px) and (max-width:767px) {
+        // height:30vh;
+    // }
     @media screen and (min-width:768px) and (max-width:991px) {
         width:450px;
         height:280px;
@@ -32,7 +38,17 @@
     }
     @media screen and (min-width:992px) {
         width:100%;
-        height: 45vh;
+        height: 400px;
+        // height: 50vh;
+    }
+    @media screen and (min-width:1100px) {
+        height:440px;
+    }
+    @media screen and (min-width:1300px) {
+        height: 520px;
+    }
+    @media screen and (min-width:1600px) {
+        height:560px;
     }
     &-background {
         @media screen and (min-width:768px) and (max-width:991px) {
@@ -126,7 +142,7 @@
             width: 600px;
         }
         @media screen and (min-width:992px) {
-            width:510px;
+            width:550px;
         }
         &:hover {
             .menu_choice_check {

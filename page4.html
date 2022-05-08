@@ -11,8 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&family=Shrikhand&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" 
+          rel="stylesheet"> 
 
     <script src="https://kit.fontawesome.com/2cdba14f97.js" crossorigin="anonymous"></script>
 
@@ -24,36 +24,33 @@
 
 <body>
 
-    <!--HEADER-->
+<!--HEADER-->
+<header class="header">
+    <a href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <h1 class="header_logo">ohmyfood</h1>
+</header>
 
-    <header class="header">
-        <a href="index.html">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <h1 class="header_logo">ohmyfood</h1>
-    </header>
+<!--MAIN-->
+<main>
 
-
-    <!--MAIN-->
-    <main>
-
-        <!--SECTION 1 : IMAGE-->
-
-        <section class="image-menu-background">
-            <img class="image-menu image-menu--4" src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+    <!--SECTION 1 : IMAGE-->
+    <div class="image-menu-background">
+        <img class="image-menu image-menu--4" 
+                src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Photo du restaurant Le délice des sens"/>
-        </section>
+    </div>
 
-        <!--SECTION 2 : MENU-->
-
-        <section class="menu">
-            <div class="menu_title">
-                <h2 class="menu_title_name">Le délice des sens</h2>
-                <i class="fa-regular fa-heart heart-1">
-                    <i class="fa-solid fa-heart heart-2"></i>
-                </i>
-            </div>
-            <div class="menu_card">
+    <!--SECTION 2 : MENU-->
+    <section class="menu">
+        <div class="menu_title">
+            <h2 class="menu_title_name">Le délice des sens</h2>
+            <i class="fa-regular fa-heart heart-1">
+                <i class="fa-solid fa-heart heart-2"></i>
+            </i>
+        </div>
+        <div class="menu_card">
             <div class="menu_starter">
                 <h3>ENTRÉES</h3>
                 <div class="menu_choice menu_choice1">
@@ -99,7 +96,7 @@
                     <div class="menu_choice_text">
                         <h4>Poulet rôti aux herbes de provence</h4>
                         <div class="menu_choice_price">
-                            <p>Et sa crèùe de truffe</p>
+                            <p>Et sa crème de truffe</p>
                             <span>40€</span>
                         </div>
                     </div>
@@ -171,41 +168,41 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!--SECTION 3 : BOUTON COMMANDER-->
+    <!--SECTION 3 : BOUTON COMMANDER-->
+    <div class="menu_button">
+        <button class="button">Commander</button>
+    </div>
 
-        <section class="menu_button">
-            <button class="button">Commander</button>
-        </section>
-
-    </main>
+</main>
 
 
-    <!--FOOTER-->
-
-    <footer class="footer">
-        <div class="footer_logo">ohmyfood</div>
-        <a href="#">
-            <div class="footer_link">
+<!--FOOTER-->
+<footer class="footer">
+    <div class="footer_logo">ohmyfood</div>
+    <ul>
+        <li>
+            <a href="#" class="footer_link" >
                 <i class="fa-solid fa-utensils footer_icon_propose"></i>
-                <p>Proposer un restaurant</p>
-            </div>
-        </a>
-        <a href="#">
-            <div class="footer_link">
+                <p>Proposer un restaurant</p>  
+            </a> 
+        </li>
+        <li>
+            <a href="#" class="footer_link">
                 <i class="fa-solid fa-handshake-angle footer_icon_partner"></i>
                 <p>Devenir partenaire</p>
-            </div>
-        </a>
-        <a href="#">
-            <p class="footer_link_mentions">Mentions légales</p>
-        </a>
-        <a href="mailto:contact@ohmyfood.com">
-            <p class="footer_link_contact">Contact</p>
-        </a>
-    </footer>
+            </a>
+        </li>
+        <li class="footer_link_mentions">
+            <a href="#">Mentions légales</a>
+        </li>
+        <li class="footer_link_contact">
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 

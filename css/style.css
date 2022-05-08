@@ -80,7 +80,7 @@ footer a {
 }
 
 .footer {
-  padding-left: 20px;
+  padding-left: 25px;
   padding-right: 20px;
   padding-top: 27px;
   padding-bottom: 20px;
@@ -88,11 +88,20 @@ footer a {
   background-color: black;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 45px;
+  }
+}
 .footer_logo {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   color: white;
   margin-bottom: 15px;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
 }
 .footer_link {
   display: flex;
@@ -101,7 +110,10 @@ footer a {
 }
 .footer_link_mentions {
   margin-top: 7px;
-  margin-bottom: -4px;
+  margin-bottom: 6px;
+}
+.footer_link_contact {
+  margin-top: 12px;
 }
 .footer_icon_propose {
   padding-right: 15px;
@@ -262,7 +274,7 @@ footer a {
     padding-right: 63px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1319px) {
+@media screen and (min-width: 992px) and (max-width: 1100px) {
   .operating_text2 {
     padding-right: 63px;
   }
@@ -277,7 +289,7 @@ footer a {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1319px) {
+@media screen and (min-width: 992px) and (max-width: 1100px) {
   .operating_text3 {
     padding-right: 20px;
   }
@@ -305,7 +317,7 @@ footer a {
     width: 260px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1320px) {
+@media screen and (min-width: 992px) and (max-width: 1100px) {
   .operating_button {
     width: 249px;
   }
@@ -318,7 +330,6 @@ footer a {
 }
 .operating_button:hover > .operating_icon {
   color: #9356DC;
-  transform: scale(1.15);
 }
 .operating_icon {
   transition: all 200ms;
@@ -398,7 +409,7 @@ footer a {
 }
 .restaurants_title {
   padding-left: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 992px) {
   .restaurants_title {
@@ -499,6 +510,11 @@ footer a {
 .image-menu--4 {
   object-position: bottom;
 }
+@media screen and (min-width: 1500px) {
+  .image-menu--4 {
+    object-position: 0 -550px;
+  }
+}
 @media screen and (max-width: 300px) {
   .image-menu {
     height: 190px;
@@ -535,7 +551,7 @@ footer a {
 @media screen and (min-width: 992px) {
   .image-menu {
     width: 100%;
-    height: 65vh;
+    height: 45vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -601,6 +617,11 @@ footer a {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .menu_title {
+    margin-top: 15px;
+  }
+}
 .menu_title h2 {
   padding-right: 25px;
 }
@@ -653,7 +674,7 @@ footer a {
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 14px;
+  padding-right: 10px;
 }
 .menu_choice_check {
   width: 65px;
@@ -690,6 +711,7 @@ footer a {
   margin-top: 10px;
 }
 .menu_choice_price p {
+  padding-right: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -729,9 +751,8 @@ footer a {
 }
 .menu_button {
   background-color: #F2F2F2;
-  padding-bottom: 50px;
-  padding-top: 26px;
-  padding-bottom: 65px;
+  padding-top: 15px;
+  padding-bottom: 77px;
 }
 
 .menu_choice1 {
@@ -815,9 +836,9 @@ footer a {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 215px;
+  width: 220px;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 27px;
   border: none;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   box-shadow: 3px 3px 7px 1px #D9D9D9;
@@ -826,15 +847,15 @@ footer a {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .button {
-    width: 300px;
-    height: 57px;
+    width: 250px;
+    height: 54px;
     border-radius: 35px;
   }
 }
 @media screen and (min-width: 992px) {
   .button {
-    width: 250px;
-    height: 57px;
+    width: 240px;
+    height: 54px;
     border-radius: 35px;
   }
 }

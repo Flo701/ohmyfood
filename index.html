@@ -11,8 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&family=Shrikhand&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" 
+          rel="stylesheet">      
 
     <script src="https://kit.fontawesome.com/2cdba14f97.js" crossorigin="anonymous"></script>
 
@@ -27,65 +27,65 @@
  <!--LOADING-->  
 <div class="loading"></div>
 
-    <!--HEADER-->
-    <header class="header">
-        <h1 class="header_logo">ohmyfood</h1>
-    </header>
+<!--HEADER-->
+<header class="header">
+    <h1 class="header_logo">ohmyfood</h1>
+</header>
 
-    <!--MAIN-->
-    <main>
+<!--MAIN-->
+<main>
 
-        <!--SECTION 1 : LOCALISATION-->
-        <section class="location">
-            <div class="location_city">
-                <i class="fa-solid fa-location-dot location_icon"></i>
-                <form method="post" action="#">
-                    <input type="text" name="city" placeholder="Paris, Belleville"/>
-                </form>
+    <!--SECTION 1 : LOCALISATION-->
+    <section class="location">
+        <div class="location_city">
+            <i class="fa-solid fa-location-dot location_icon"></i>
+            <form method="post" action="#">
+                <input type="text" name="city" placeholder="Paris, Belleville"/>
+            </form>
+        </div>
+        <div class="location_text">
+            <div class="location_title">
+                <h3>Réservez le menu qui vous convient</h3>
+                <p class="location_title_p">Découvrez des restaurants d'exception,<br/>sélectionnés par nos soins</p>
             </div>
-            <div class="location_text">
-                <div class="location_title">
-                    <h3>Réservez le menu qui vous convient</h3>
-                    <p class="location_title_p">Découvrez des restaurants d'exception,<br/>sélectionnés par nos soins</p>
-                </div>
-                <div class="location_button">
-                    <div class="button">Explorer nos restaurants</div>
-                </div>
+            <div class="location_button">
+                <div class="button">Explorer nos restaurants</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--SECTION 2 : FONCTIONNEMENT-->
-        <section class="operating">
-            <h3 class="operating_title">Fonctionnement</h3>
-            <div class="operating_steps">
-                <div class="operating_choose">
-                    <div class="operating_button">
-                        <div class="operating_number">1</div>
-                        <div class="operating_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                        <div class="operating_text1">Choisissez un restaurant</div>
-                    </div> 
-                </div>
-                <div class="operating_compose"> 
-                    <div class="operating_button">
-                        <div class="operating_number">2</div>
-                        <div class="operating_icon"><i class="fa-solid fa-list-ul"></i></div>
-                        <div class="operating_text2">Composez votre menu</div>
-                    </div>
-                </div>
-                <div class="operating_enjoy">
-                    <div class="operating_button operating_button--enjoy">
-                        <div class="operating_number">3</div>
-                        <div class="operating_icon"><i class="fa-solid fa-store"></i></div>
-                        <div class="operating_text3">Dégustez au restaurant</div>
-                    </div>
+    <!--SECTION 2 : FONCTIONNEMENT-->
+    <section class="operating">
+        <h3 class="operating_title">Fonctionnement</h3>
+        <div class="operating_steps">
+            <div class="operating_choose">
+                <div class="operating_button">
+                    <div class="operating_number">1</div>
+                    <div class="operating_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="operating_text1">Choisissez un restaurant</div>
+                </div> 
+            </div>
+            <div class="operating_compose"> 
+                <div class="operating_button">
+                    <div class="operating_number">2</div>
+                    <div class="operating_icon"><i class="fa-solid fa-list-ul"></i></div>
+                    <div class="operating_text2">Composez votre menu</div>
                 </div>
             </div>
-        </section>
+            <div class="operating_enjoy">
+                <div class="operating_button operating_button--enjoy">
+                    <div class="operating_number">3</div>
+                    <div class="operating_icon"><i class="fa-solid fa-store"></i></div>
+                    <div class="operating_text3">Dégustez au restaurant</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--SECTION 3 : RESTAURANTS-->
-        <section class="restaurants">
-            <h3 class="restaurants_title">Restaurants</h3>
-            <div class="restaurants_allcards">
+    <!--SECTION 3 : RESTAURANTS-->
+    <section class="restaurants">
+        <h3 class="restaurants_title">Restaurants</h3>
+        <div class="restaurants_allcards">
             <div class="restaurants_cards">
                 <a href="./page1.html">
                     <img class="restaurants_images" src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
@@ -148,33 +148,35 @@
                     </div>
                 </a>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+</main>
 
-    <!--FOOTER-->
-    <footer class="footer">
-        <div class="footer_logo">ohmyfood</div>
-        <a href="#">
-            <div class="footer_link">
+<!--FOOTER-->
+<footer class="footer">
+    <div class="footer_logo">ohmyfood</div>
+    <ul>
+        <li>
+            <a href="#" class="footer_link" >
                 <i class="fa-solid fa-utensils footer_icon_propose"></i>
-                <p>Proposer un restaurant</p>   
-            </div>
-        </a>
-        <a href="#">
-            <div class="footer_link">
+                <p>Proposer un restaurant</p>  
+            </a> 
+        </li>
+        <li>
+            <a href="#" class="footer_link">
                 <i class="fa-solid fa-handshake-angle footer_icon_partner"></i>
                 <p>Devenir partenaire</p>
-            </div>
-        </a>
-        <a href="#">
-            <p class="footer_link_mentions">Mentions légales</p>
-        </a>
-        <a href="mailto:contact@ohmyfood.com">
-            <p class="footer_link_contact">Contact</p>
-        </a>
-    </footer>
+            </a>
+        </li>
+        <li class="footer_link_mentions">
+            <a href="#">Mentions légales</a>
+        </li>
+        <li class="footer_link_contact">
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 

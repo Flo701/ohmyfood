@@ -43,16 +43,6 @@ h4 {
   font-size: 18px;
 }
 
-main a {
-  text-decoration: none;
-  color: black;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -90,7 +80,7 @@ footer a {
   background-color: black;
   color: white;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .footer {
     padding-left: 45px;
   }
@@ -173,7 +163,8 @@ footer a {
   .location_text {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-right: 125px;
   }
 }
 .location_title {
@@ -244,42 +235,49 @@ footer a {
   font-size: 18px;
 }
 .operating_text1 {
-  padding-left: 12px;
+  padding-left: 14px;
   padding-right: 5px;
 }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 330px) {
   .operating_text1 {
     padding-left: 27px;
     padding-right: 12px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1319px) {
+  .operating_text1 {
+    padding-left: 20px;
+  }
+}
 .operating_text2 {
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 20px;
 }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 330px) {
   .operating_text2 {
     padding-left: 25px;
     padding-right: 63px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 992px) and (max-width: 1319px) {
   .operating_text2 {
+    padding-left: 18px;
     padding-right: 63px;
   }
 }
 .operating_text3 {
-  padding-left: 7px;
+  padding-left: 9px;
   padding-right: 5px;
 }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 330px) {
   .operating_text3 {
     padding-left: 22px;
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 992px) and (max-width: 1319px) {
   .operating_text3 {
+    padding-left: 15px;
     padding-right: 20px;
   }
 }
@@ -296,17 +294,17 @@ footer a {
   transition: all 200ms;
   position: relative;
 }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 330px) {
   .operating_button {
     width: 231px;
   }
 }
-@media screen and (min-width: 316px) {
+@media screen and (min-width: 331px) and (max-width: 991px) {
   .operating_button {
     width: 260px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 992px) and (max-width: 1319px) {
   .operating_button {
     width: 249px;
   }
@@ -335,22 +333,12 @@ footer a {
 }
 .operating_icon {
   padding-left: 38px;
+  padding-right: 7px;
   color: grey;
 }
-@media screen and (min-width: 306px) and (max-width: 355px) {
+@media screen and (min-width: 316px) and (max-width: 991px) {
   .operating_icon {
     padding-left: 29px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .operating_icon {
-    padding-right: 5px;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .operating_icon {
-    padding-left: 30px;
-    padding-right: 2px;
   }
 }
 
@@ -372,7 +360,7 @@ footer a {
 }
 .restaurants_cards {
   position: relative;
-  width: 330px;
+  width: 375px;
   height: 290px;
   margin: auto;
   background-color: white;
@@ -885,6 +873,7 @@ footer a {
   font-size: 22px;
   color: transparent;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 400ms;

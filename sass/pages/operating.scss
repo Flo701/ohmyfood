@@ -38,33 +38,40 @@
         font-size : 18px;
     }
     &_text1 {
-        padding-left:12px;
+        padding-left:14px;
         padding-right: 5px;
-        @media screen and (max-width:315px) {
+        @media screen and (max-width:330px) {
             padding-left: 27px;
             padding-right:12px;
+        }
+        @media screen and (min-width:992px) and (max-width:1319px) {
+            padding-left: 20px;
         } 
     }
     &_text2 {
-        padding-left:10px;
+        padding-left:12px;
         padding-right:20px;
-        @media screen and (max-width:315px) {
+        @media screen and (max-width:330px) {
             padding-left: 25px;
             padding-right:63px;
         }
-        @media screen and (min-width:992px) and (max-width:1100px) {
+        @media screen and (min-width:992px) and (max-width:1319px) {
+            padding-left: 18px;
             padding-right:63px;
+            
         }
     }
     &_text3 {
-        padding-left:7px;
+        padding-left:9px;
         padding-right: 5px;
-        @media screen and (max-width:315px) {
+        @media screen and (max-width:330px) {
             padding-left: 22px;
             padding-right:15px;
         }
-        @media screen and (min-width:992px) and (max-width:1100px) {
+        @media screen and (min-width:992px) and (max-width:1319px) {
+            padding-left:15px;
             padding-right:20px;
+            
         }
     }
     &_button {
@@ -79,15 +86,18 @@
         box-shadow: 4px 4px 7px 1px $color-background-darken; 
         transition: all 200ms;
         position:relative;
-        @media screen and (max-width:315px) {
+        @media screen and (max-width:330px) {
             width:231px;
         }
-        @media screen and (min-width: 316px) {
+        @media screen and (min-width: 331px) and (max-width: 991px) {
             width : 260px;
         }
-        @media screen and (min-width:992px) and (max-width:1100px) {
+        @media screen and (min-width:992px) and (max-width:1319px) {
             width:249px;
         }
+        // @media screen and (min-width: 1320px) {
+            // width: 330px;
+        // }
         &:hover {
             cursor: pointer;
             transform: scale(1.02);
@@ -111,16 +121,10 @@
     }
     &_icon {   
     padding-left:38px;
+    padding-right:7px;
     color: grey;
-        @media screen and (min-width:306px) and (max-width:355px) {
+        @media screen and (min-width:316px) and (max-width:991px) {
             padding-left:29px;
-        }
-        @media screen and (min-width: 992px) {
-            padding-right: 5px;
-        } 
-        @media screen and (min-width:1320px){
-            padding-left: 30px;
-            padding-right: 2px;
         }
     } 
 }

@@ -1,7 +1,7 @@
-@import "base/base";
-@import "base/typography";
 @import "utils/variables";
 @import "utils/mixins";
+@import "base/base";
+@import "base/typography";
 @import "layout/header";
 @import "layout/footer";
 @import "pages/location";
@@ -11,4 +11,3 @@
 @import "components/loading-spinner";
 @import "components/button";
 @import "components/heart";
-

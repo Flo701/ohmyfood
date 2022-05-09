@@ -37,17 +37,6 @@
     &_choose i {
         font-size : 18px;
     }
-    &_number {
-        @include flexbox-center;
-        width:30px;
-        height:30px;
-        border: 1px solid $color-primary;
-        border-radius: 50%;
-        color: white;
-        background-color: $color-primary;
-        position:absolute;
-        left:-12px;
-        }
     &_text1 {
         padding-left:12px;
         padding-right: 5px;
@@ -109,15 +98,24 @@
             color: $color-primary;
         }
     }
-    &_icon {
-    transition: all 200ms;    
+    &_number {
+        @include flexbox-center;
+        width:30px;
+        height:30px;
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+        color: white;
+        background-color: $color-primary;
+        position:absolute;
+        left:-12px;
+    }
+    &_icon {   
     padding-left:38px;
     color: grey;
         @media screen and (min-width:306px) and (max-width:355px) {
             padding-left:29px;
         }
         @media screen and (min-width: 992px) {
-            padding-left:2;
             padding-right: 5px;
         } 
         @media screen and (min-width:1320px){

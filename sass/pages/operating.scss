@@ -5,7 +5,7 @@
     padding-right: 25px; 
     background-color: white;
     @media screen and (min-width:992px) {
-        height: 245px;
+        height: 240px;
     }
     &_title { 
         margin-bottom :24px;
@@ -44,6 +44,9 @@
             padding-left: 27px;
             padding-right:12px;
         }
+        @media screen and (min-width:331px) and (max-width: 500px) {
+            padding-left:9px;
+        }
         @media screen and (min-width:992px) and (max-width:1319px) {
             padding-left: 20px;
         } 
@@ -55,10 +58,12 @@
             padding-left: 25px;
             padding-right:63px;
         }
+        @media screen and (min-width:331px) and (max-width: 500px) {
+            padding-left:7px;
+        }
         @media screen and (min-width:992px) and (max-width:1319px) {
             padding-left: 18px;
-            padding-right:63px;
-            
+            padding-right:63px;   
         }
     }
     &_text3 {
@@ -68,10 +73,12 @@
             padding-left: 22px;
             padding-right:15px;
         }
+        @media screen and (min-width:331px) and (max-width: 500px) {
+            padding-left:4px;
+        }
         @media screen and (min-width:992px) and (max-width:1319px) {
             padding-left:15px;
-            padding-right:20px;
-            
+            padding-right:20px;   
         }
     }
     &_button {
@@ -89,15 +96,12 @@
         @media screen and (max-width:330px) {
             width:231px;
         }
-        @media screen and (min-width: 331px) and (max-width: 991px) {
+        @media screen and (min-width: 331px) and (max-width: 500px) {
             width : 260px;
         }
         @media screen and (min-width:992px) and (max-width:1319px) {
             width:249px;
         }
-        // @media screen and (min-width: 1320px) {
-            // width: 330px;
-        // }
         &:hover {
             cursor: pointer;
             transform: scale(1.02);

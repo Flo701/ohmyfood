@@ -15,34 +15,21 @@
         }
         &:hover .heart-2 { 
             // top:0px;
-             height: 100%;
+            height: 100%;
         }
     }
     & .heart-2 {
         position: absolute;
         left: 0px;
-        // right:0;
-        // bottom:0;
-        //top:16px;
+        // top:16px;
         height :0%;
         color:transparent;
         background-image: $color-linear-gradient;
         background-clip: text;
         -webkit-background-clip:text;
-        // transform-origin:bottom;
-        // animation: heart 1.2s 150ms both;
         transition: all 1.3s 100ms;
         @media screen and (min-width:768px) {
             font-size: 22px;
         }    
-    }
-}
-
-@keyframes heart {
-    0% {
-        height:0%;
-    }
-    100% {
-        height:100%;
     }
 }

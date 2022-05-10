@@ -9,6 +9,10 @@
     box-shadow:3px 3px 7px 1px $color-background-darken; 
     color: white;
     transition : all 200ms ease;
+    @media screen and (max-width:354px) {
+        width: 205px;
+        height:50px;
+    } 
     @media screen and (min-width:768px) and (max-width:991px) {
         width:250px;
         height: 54px;

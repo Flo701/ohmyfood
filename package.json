@@ -9,5 +9,6 @@
   },
   "author": "Florence Leclercq",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "repository": "https://github.com/Flo701/ohmyfood.git"
 }

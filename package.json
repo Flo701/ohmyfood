@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss ./css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed.css"
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ../css/prefixed.css/style.css"
   },
   "author": "Florence Leclercq",
   "license": "ISC",

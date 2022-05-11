@@ -5,20 +5,22 @@
     height : auto;
     background-color: black;
     color :white;
-    @media screen and (min-width:992px) {
-        // padding-left: 45px;
+    @media screen and (min-width: 768px) {
+        padding-left:0;
     }
     &_logo {
         font-family: "Shrikhand", cursive;
         font-size:18px;
         color:white;
         margin-bottom :15px;
-        cursor: pointer;
-        
     }
     ul {
         list-style:none;
         padding-left: 0;
+        @media screen and (min-width:768px) {
+            @include flexbox-center; 
+            flex-direction: column; 
+        } 
     }
     &_link {
         display: flex;
@@ -30,6 +32,9 @@
         }
         &_contact {
             margin-top:12px;
+            @media screen and (min-width:768px) {
+                margin-top:7px;
+            }
         }
     }
     &_icon {

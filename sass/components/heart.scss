@@ -5,31 +5,34 @@
         font-weight: 300;
         padding-right: 2px;
         overflow: hidden;
+        opacity:1;
+        background-clip: text;
+        -webkit-background-clip:text;
         cursor:pointer;
-        transition: all 1.3s 100ms;
+        transition: all 1.5s 100ms;
         @media screen and (min-width:768px) {
-            font-size: 22px;
+            font-size: 24px;
         }
         &:hover {
             color: transparent;
         }
         &:hover .heart-2 { 
-            // top:0px;
-            height: 100%;
+            opacity: 1;
+            transform: scale(1.02);
         }
     }
     & .heart-2 {
         position: absolute;
-        left: 0px;
-        // top:16px;
-        height :0%;
+        left: 0;
+        bottom:0;
         color:transparent;
         background-image: $color-linear-gradient;
+        opacity: 0;
         background-clip: text;
         -webkit-background-clip:text;
-        transition: all 1.3s 100ms;
+        transition: all 1.5s 100ms;
         @media screen and (min-width:768px) {
-            font-size: 22px;
+            font-size: 24px;
         }    
     }
 }

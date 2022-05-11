@@ -11,7 +11,7 @@ main {
   background-color: #F2F2F2;
 }
 
-main a {
+body a {
   text-decoration: none;
   color: black;
 }
@@ -44,7 +44,7 @@ h2 {
 }
 @media screen and (min-width: 992px) {
   h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
@@ -535,7 +535,6 @@ h4 {
 
 .image-menu {
   width: 100%;
-  height: 360px;
   object-fit: cover;
   display: block;
 }
@@ -552,29 +551,33 @@ h4 {
     height: 190px;
   }
 }
-@media screen and (min-width: 301px) and (max-width: 370px) {
+@media screen and (min-width: 301px) {
   .image-menu {
     height: 210px;
   }
 }
-@media screen and (min-width: 371px) and (max-width: 430px) {
+@media screen and (min-width: 371px) {
   .image-menu {
     height: 240px;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 530px) {
+@media screen and (min-width: 431px) {
   .image-menu {
     height: 265px;
   }
 }
-@media screen and (min-width: 530px) and (max-width: 600px) {
+@media screen and (min-width: 530px) {
   .image-menu {
     height: 310px;
   }
 }
+@media screen and (min-width: 601px) {
+  .image-menu {
+    height: 360px;
+  }
+}
 @media screen and (min-width: 992px) {
   .image-menu {
-    width: 100%;
     height: 400px;
   }
 }
@@ -620,7 +623,7 @@ h4 {
   padding-bottom: 10px;
 }
 .menu_title h2 {
-  padding-right: 17px;
+  padding-right: 19px;
 }
 @media screen and (min-width: 767px) {
   .menu_card {
@@ -655,7 +658,7 @@ h4 {
 .menu_choice {
   display: flex;
   width: 100%;
-  height: 85px;
+  height: 80px;
   margin-bottom: 20px;
   background-color: white;
   box-shadow: 4px 4px 7px 1px #D9D9D9;
@@ -667,26 +670,26 @@ h4 {
 @media screen and (min-width: 768px) {
   .menu_choice {
     width: 650px;
-    height: 90px;
+    height: 85px;
   }
 }
 .menu_choice:hover .menu_choice_check {
   margin-right: 0;
 }
 .menu_choice:hover .menu_choice_check .fa-check {
-  animation: animation-menu 1s;
+  animation: animation-menu 0.7s;
 }
 .menu_choice_text {
   overflow: hidden;
   width: 100%;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .menu_choice_text {
-    padding-top: 18px;
+    padding-top: 17px;
   }
 }
 .menu_choice h4 {
@@ -705,7 +708,7 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .menu_choice_price {
-    margin-top: 15px;
+    margin-top: 14px;
   }
 }
 .menu_choice_price p {
@@ -720,10 +723,10 @@ h4 {
   font-weight: bold;
 }
 .menu_choice_check {
-  width: 65px;
+  width: 67px;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
-  margin-right: -65px;
+  margin-right: -67px;
   transition: all 0.8s ease;
   display: flex;
   align-items: center;
@@ -794,8 +797,8 @@ h4 {
 }
 .loading::after {
   content: "";
-  border-top: 5px solid #9356DC;
-  border-right: 5px solid #9356DC;
+  border-top: 6px solid #9356DC;
+  border-right: 6px solid #9356DC;
   border-radius: 50%;
   width: 85px;
   height: 85px;
@@ -861,33 +864,38 @@ h4 {
   font-weight: 300;
   padding-right: 2px;
   overflow: hidden;
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
   cursor: pointer;
-  transition: all 1.3s 100ms;
+  transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
   .restaurants .heart-1, .menu .heart-1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 .restaurants .heart-1:hover, .menu .heart-1:hover {
   color: transparent;
 }
 .restaurants .heart-1:hover .heart-2, .menu .heart-1:hover .heart-2 {
-  height: 100%;
+  opacity: 1;
+  transform: scale(1.02);
 }
 .restaurants .heart-2, .menu .heart-2 {
   position: absolute;
-  left: 0px;
-  height: 0%;
+  left: 0;
+  bottom: 0;
   color: transparent;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  opacity: 0;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 1.3s 100ms;
+  transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
   .restaurants .heart-2, .menu .heart-2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 

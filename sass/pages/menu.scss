@@ -1,6 +1,5 @@
 .image-menu {
     width: 100%;
-    height: 360px;
     object-fit: cover;
     display: block;
     &--4 {
@@ -12,20 +11,22 @@
     @media screen and (max-width: 300px) {
         height: 190px;
     }
-    @media screen and (min-width:301px) and (max-width: 370px) {
+    @media screen and (min-width:301px) {
         height: 210px;
     }
-    @media screen and (min-width: 371px) and (max-width: 430px) {
+    @media screen and (min-width: 371px) {
         height: 240px;
     }
-    @media screen and (min-width: 431px) and (max-width:530px) {
+    @media screen and (min-width: 431px)  {
         height:265px;    
     }
-    @media screen and (min-width: 530px) and (max-width:600px) {
+    @media screen and (min-width: 530px) {
         height:310px;
     }
+    @media screen and (min-width:601px) {
+        height:360px;
+    }
     @media screen and (min-width:992px) {
-        width:100%;
         height: 400px;
     }
     @media screen and (min-width:1100px) {
@@ -61,7 +62,7 @@
         justify-content: space-between;
         padding-bottom:10px;  
         & h2 {
-            padding-right: 17px;
+            padding-right: 19px;
         }
     }
     &_card {
@@ -95,7 +96,7 @@
     &_choice {
         display: flex;
         width:100%;
-        height: 85px;
+        height: 80px;
         margin-bottom: 20px;
         background-color: white;
         box-shadow: 4px 4px 7px 1px $color-background-darken ;
@@ -105,25 +106,25 @@
         animation: animation-menu-appear 1.5s ease-in-out both;
         @media screen and (min-width:768px) {
             width: 650px;
-            height: 90px;
+            height: 85px;
         }
         &:hover {
             .menu_choice_check {
                 margin-right :0;
             }
             .menu_choice_check .fa-check {
-                animation: animation-menu 1s;
+                animation: animation-menu 0.7s;
             }
         }
         &_text {
             overflow: hidden;
             width:100%;
-            padding-top:17px;
+            padding-top:16px;
             padding-bottom:10px;
             padding-left:15px;
             padding-right:15px;
             @media screen and (min-width: 768px) {
-                padding-top:18px;
+                padding-top:17px;
             }
         }
         & h4 {
@@ -140,7 +141,7 @@
             justify-content: space-between;
             margin-top:12px;
             @media screen and (min-width:768px) {
-                margin-top: 15px;
+                margin-top: 14px;
             }
             & p {
                 padding-right:5px;
@@ -155,10 +156,10 @@
             }
         }
         &_check {
-            width :65px;
+            width :67px;
             background: $color-tertiary;
             border-radius: 0 20px 20px 0;
-            margin-right:-65px;
+            margin-right:-67px;
             transition: all 0.8s ease;
             @include flexbox-center;
             & .fa-check {

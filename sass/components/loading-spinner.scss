@@ -10,8 +10,8 @@
     animation:loading 3s both;
     &::after {
         content:"";
-        border-top: 5px solid $color-primary;
-        border-right: 5px solid $color-primary;
+        border-top: 6px solid $color-primary;
+        border-right: 6px solid $color-primary;
         border-radius:50%;
         width: 85px;
         height: 85px;

@@ -79,6 +79,10 @@ h4 {
   }
 }
 .header i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -244,7 +248,7 @@ h4 {
 }
 @media screen and (min-width: 992px) {
   .operating {
-    height: 240px;
+    height: 230px;
   }
 }
 .operating_title {
@@ -881,7 +885,6 @@ h4 {
   font-weight: 300;
   padding-right: 2px;
   overflow: hidden;
-  opacity: 1;
   background-clip: text;
   -webkit-background-clip: text;
   cursor: pointer;

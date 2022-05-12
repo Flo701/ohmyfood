@@ -85,6 +85,48 @@
             margin-top : 0px;   
         }
     }
+    &_logo {
+        @include flexbox-center;
+        width:28px;
+        height:28px;
+        &:hover {
+            .heart1 {
+                opacity: 0;
+            }
+            .heart2 {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+        & .heart1 {
+            position: absolute;
+            font-size: 20px;
+            padding-right: 1px;
+            font-weight: 300;
+            overflow: hidden;
+            background-clip: text;
+            -webkit-background-clip:text;
+            cursor:pointer;
+            transition: all 1.5s 100ms;
+            @media screen and (min-width:768px) {
+                font-size: 23px;
+            }
+        }
+        & .heart2 {
+            position: absolute;
+            font-size: 20px;
+            padding-right: 1px;
+            color:transparent;
+            background-image: $color-linear-gradient;
+            opacity: 0;
+            background-clip: text;
+            -webkit-background-clip:text;
+            transition: all 1.5s 100ms;
+            @media screen and (min-width:768px) {
+                font-size: 23px;
+            }
+        }
+    }
     &_new {
         position: absolute;
         top :13px;

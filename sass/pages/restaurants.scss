@@ -8,13 +8,11 @@
         padding-left:0px;
         margin-bottom: 32px;
         @media screen and (min-width:992px) {
-            // padding-left: 20px;
         }  
     }
     &_cards {
         position: relative;
         max-width:375px;
-        // width :330px;
         height:290px;
         margin:auto;
         background-color: white;
@@ -28,11 +26,9 @@
         }
         @media screen and (min-width:768px) {
             margin-bottom: 45px;
-        }
-        @media screen and (min-width:768px) and (max-width:1050px) {
             width: 300px;
             height:272px;
-        } 
+        }
         @media screen and (min-width:1051px) {
             width: 375px;
             height:319px;

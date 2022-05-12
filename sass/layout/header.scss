@@ -6,6 +6,9 @@
     box-shadow: 0 0 0.5rem rgb(0 0 0/25%);
     position: relative;
     z-index:1;
+    @media screen and (min-width:992px) {
+        height: 60px;
+    }
     &_logo {
         display: flex;
         align-items: center;
@@ -14,7 +17,7 @@
         margin-bottom: 15px;
     }
     h1 {
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width:991px) {
             font-size: 24px;
         }
     }

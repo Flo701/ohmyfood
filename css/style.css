@@ -69,7 +69,7 @@ h4 {
 }
 @media screen and (min-width: 992px) {
   .header {
-    height: 60px;
+    height: 65px;
   }
 }
 .header_logo {
@@ -773,7 +773,7 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .menu_choice {
-    width: 650px;
+    width: 550px;
     height: 85px;
   }
 }

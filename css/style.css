@@ -512,37 +512,35 @@ h4 {
   margin-top: 0px;
 }
 .restaurants_logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 28px;
   height: 28px;
+  cursor: pointer;
+  position: relative;
 }
-.restaurants_logo:hover .heart1 {
+.restaurants_logo:hover :first-child {
   opacity: 0;
 }
-.restaurants_logo:hover .heart2 {
+.restaurants_logo:hover :last-child {
   opacity: 1;
-  transform: scale(1.05);
+  top: 0;
 }
-.restaurants_logo .heart1 {
+.restaurants_logo :first-child {
   position: absolute;
+  left: 0;
+  top: 0;
   font-size: 20px;
   padding-right: 1px;
-  font-weight: 300;
-  overflow: hidden;
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
   transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
-  .restaurants_logo .heart1 {
+  .restaurants_logo :first-child {
     font-size: 23px;
   }
 }
-.restaurants_logo .heart2 {
+.restaurants_logo :last-child {
   position: absolute;
+  left: 0;
+  top: 16px;
   font-size: 20px;
   padding-right: 1px;
   color: transparent;
@@ -553,7 +551,7 @@ h4 {
   transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
-  .restaurants_logo .heart2 {
+  .restaurants_logo :last-child {
     font-size: 23px;
   }
 }
@@ -695,31 +693,27 @@ h4 {
 .menu_logo {
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
-.menu_logo:hover .logo1 {
+.menu_logo:hover :first-child {
   opacity: 0;
 }
-.menu_logo:hover .logo2 {
+.menu_logo:hover :last-child {
   opacity: 1;
   transform: scale(1.05);
 }
-.menu_logo .logo1 {
+.menu_logo :first-child {
   position: absolute;
   font-size: 20px;
   padding-right: 1px;
-  font-weight: 300;
-  overflow: hidden;
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
   transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
-  .menu_logo .logo1 {
+  .menu_logo :first-child {
     font-size: 23px;
   }
 }
-.menu_logo .logo2 {
+.menu_logo :last-child {
   position: absolute;
   font-size: 20px;
   padding-right: 1px;
@@ -731,7 +725,7 @@ h4 {
   transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
-  .menu_logo .logo2 {
+  .menu_logo :last-child {
     font-size: 23px;
   }
 }

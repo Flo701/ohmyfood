@@ -68,30 +68,26 @@
     &_logo {
         width:28px;
         height:28px;
+        cursor:pointer;
         &:hover {
-            .logo1 {
+            :first-child {
                 opacity: 0;
             }
-            .logo2 {
+            :last-child {
                 opacity: 1;
                 transform: scale(1.05);
             }
         }
-        & .logo1 {
+        & :first-child {
             position: absolute;
             font-size: 20px;
             padding-right: 1px;
-            font-weight: 300;
-            overflow: hidden;
-            background-clip: text;
-            -webkit-background-clip:text;
-            cursor:pointer;
             transition: all 1.5s 100ms;
             @media screen and (min-width:768px) {
                 font-size: 23px;
             }
         }
-        & .logo2 {
+        & :last-child {
             position: absolute;
             font-size: 20px;
             padding-right: 1px;

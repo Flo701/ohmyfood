@@ -86,36 +86,40 @@
         }
     }
     &_logo {
-        @include flexbox-center;
+        // @include flexbox-center;
         width:28px;
         height:28px;
+        cursor:pointer;
+        position: relative;
         &:hover {
-            .heart1 {
+            :first-child {
                 opacity: 0;
             }
-            .heart2 {
+            :last-child {
                 opacity: 1;
-                transform: scale(1.05);
+                // height:100%;
+                top:0;
+                // transform: scale(1.05);
             }
         }
-        & .heart1 {
+        & :first-child {
             position: absolute;
+            left:0;
+            top:0;
             font-size: 20px;
             padding-right: 1px;
-            font-weight: 300;
-            overflow: hidden;
-            background-clip: text;
-            -webkit-background-clip:text;
-            cursor:pointer;
             transition: all 1.5s 100ms;
             @media screen and (min-width:768px) {
                 font-size: 23px;
             }
         }
-        & .heart2 {
+        & :last-child {
             position: absolute;
+            left:0;
+            top:16px;
             font-size: 20px;
             padding-right: 1px;
+            // height:0%;
             color:transparent;
             background-image: $color-linear-gradient;
             opacity: 0;

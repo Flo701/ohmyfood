@@ -86,26 +86,21 @@
         }
     }
     &_logo {
-        // @include flexbox-center;
+        @include flexbox-center;
         width:28px;
         height:28px;
         cursor:pointer;
-        position: relative;
         &:hover {
             :first-child {
                 opacity: 0;
             }
             :last-child {
                 opacity: 1;
-                // height:100%;
-                top:0;
-                // transform: scale(1.05);
+                transform: scale(1.05);
             }
         }
         & :first-child {
             position: absolute;
-            left:0;
-            top:0;
             font-size: 20px;
             padding-right: 1px;
             transition: all 1.5s 100ms;
@@ -115,11 +110,8 @@
         }
         & :last-child {
             position: absolute;
-            left:0;
-            top:16px;
             font-size: 20px;
             padding-right: 1px;
-            // height:0%;
             color:transparent;
             background-image: $color-linear-gradient;
             opacity: 0;

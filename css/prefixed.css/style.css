@@ -341,7 +341,7 @@ h4 {
     padding-right: 12px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 470px) {
+@media screen and (min-width: 331px) and (max-width: 410px) {
   .operating_text1 {
     padding-left: 9px;
   }
@@ -361,7 +361,7 @@ h4 {
     padding-right: 63px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 470px) {
+@media screen and (min-width: 331px) and (max-width: 410px) {
   .operating_text2 {
     padding-left: 7px;
   }
@@ -382,7 +382,7 @@ h4 {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 470px) {
+@media screen and (min-width: 331px) and (max-width: 410px) {
   .operating_text3 {
     padding-left: 4px;
   }
@@ -418,7 +418,7 @@ h4 {
     width: 231px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 470px) {
+@media screen and (min-width: 331px) and (max-width: 410px) {
   .operating_button {
     width: 260px;
   }

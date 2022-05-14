@@ -83,8 +83,8 @@
     }
     &_logo {
         @include flexbox-center;
-        width:28px;
-        height:28px;
+        width:27px;
+        height:27px;
         cursor:pointer;
         &:hover {
             :first-child {
@@ -98,7 +98,6 @@
         & :first-child {
             position: absolute;
             font-size: 20px;
-            padding-right: 1px;
             transition: all 1.5s 100ms;
             @media screen and (min-width:768px) {
                 font-size: 23px;
@@ -107,7 +106,6 @@
         & :last-child {
             position: absolute;
             font-size: 20px;
-            padding-right: 1px;
             color:transparent;
             background-image: $color-linear-gradient;
             opacity: 0;

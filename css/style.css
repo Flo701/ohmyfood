@@ -94,8 +94,8 @@ h4 {
 
 .footer {
   padding-left: 25px;
-  padding-top: 22px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   height: auto;
   background-color: black;
   color: white;
@@ -297,7 +297,7 @@ h4 {
     padding-right: 12px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 413px) {
+@media screen and (min-width: 331px) and (max-width: 449px) {
   .operating_text1 {
     padding-left: 9px;
   }
@@ -317,7 +317,7 @@ h4 {
     padding-right: 63px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 413px) {
+@media screen and (min-width: 331px) and (max-width: 449px) {
   .operating_text2 {
     padding-left: 7px;
   }
@@ -338,7 +338,7 @@ h4 {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 413px) {
+@media screen and (min-width: 331px) and (max-width: 449px) {
   .operating_text3 {
     padding-left: 4px;
   }
@@ -367,7 +367,7 @@ h4 {
     width: 231px;
   }
 }
-@media screen and (min-width: 331px) and (max-width: 413px) {
+@media screen and (min-width: 331px) and (max-width: 449px) {
   .operating_button {
     width: 260px;
   }
@@ -512,8 +512,8 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 27px;
+  height: 27px;
   cursor: pointer;
 }
 .restaurants_logo:hover :first-child {
@@ -526,7 +526,6 @@ h4 {
 .restaurants_logo :first-child {
   position: absolute;
   font-size: 20px;
-  padding-right: 1px;
   transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
@@ -537,7 +536,6 @@ h4 {
 .restaurants_logo :last-child {
   position: absolute;
   font-size: 20px;
-  padding-right: 1px;
   color: transparent;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   opacity: 0;
@@ -665,7 +663,7 @@ h4 {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   border-radius: 45px 45px 0 0;
   background-color: #F2F2F2;
 }
@@ -686,8 +684,11 @@ h4 {
   padding-right: 19px;
 }
 .menu_logo {
-  width: 28px;
-  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
   cursor: pointer;
 }
 .menu_logo:hover :first-child {
@@ -700,7 +701,6 @@ h4 {
 .menu_logo :first-child {
   position: absolute;
   font-size: 20px;
-  padding-right: 1px;
   transition: all 1.5s 100ms;
 }
 @media screen and (min-width: 768px) {
@@ -711,7 +711,6 @@ h4 {
 .menu_logo :last-child {
   position: absolute;
   font-size: 20px;
-  padding-right: 1px;
   color: transparent;
   background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   opacity: 0;
@@ -724,7 +723,7 @@ h4 {
     font-size: 23px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu_card {
     display: flex;
     flex-wrap: wrap;
@@ -843,8 +842,14 @@ h4 {
 }
 .menu_button {
   background-color: #F2F2F2;
-  padding-top: 15px;
-  padding-bottom: 77px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 767px) {
+  .menu_button {
+    padding-top: 20px;
+    padding-bottom: 65px;
+  }
 }
 
 .menu_choice1 {

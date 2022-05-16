@@ -1,0 +1,36 @@
+.heart {
+    @include flexbox-center;
+    width:27px;
+    height:27px;
+    cursor:pointer;
+    &:hover {
+        :first-child {
+            opacity: 0;
+        }
+        :last-child {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+    }
+    & :first-child {
+        position: absolute;
+        font-size: 20px;
+        transition: all 1.5s 100ms;
+        @media screen and (min-width:768px) {
+            font-size: 23px;
+        }
+    }
+    & :last-child {
+        position: absolute;
+        font-size: 20px;
+        color:transparent;
+        background-image: $color-linear-gradient;
+        opacity: 0;
+        background-clip: text;
+        -webkit-background-clip:text;
+        transition: all 1.5s 100ms;
+        @media screen and (min-width:768px) {
+            font-size: 23px;
+        }
+    }
+}

@@ -113,7 +113,7 @@
                 margin-right :0;
             }
             .menu_choice_check .fa-check {
-                animation: animation-menu 0.7s;
+                animation: animation-menu 0.8s ease-in-out;
             }
         }
         &_text {
@@ -129,8 +129,8 @@
         }
         & h4 {
             white-space:nowrap;
-            text-overflow: ellipsis;
             overflow: hidden;
+            text-overflow: ellipsis;
             margin-top :0;
             margin-bottom: 0;
             padding-right: 10px;
@@ -144,10 +144,10 @@
                 margin-top: 12px;
             }
             & p {
-                padding-right:5px;
                 white-space:nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                padding-right:5px;
                 margin :0;
             }
             & span {
@@ -160,7 +160,7 @@
             background: $color-tertiary;
             border-radius: 0 20px 20px 0;
             margin-right:-67px;
-            transition: all 0.8s ease;
+            transition: all 0.8s ease-in-out;
             @include flexbox-center;
             & .fa-check {
                 background-color: white;
@@ -184,6 +184,7 @@
 }
 
 
+// Animation-menu-appear :
 @keyframes animation-menu-appear {
     0% {
         opacity:0;
@@ -195,6 +196,14 @@
     }
 }
 
+@for $i from 1 through 4 {
+    .menu_choice#{$i} {
+    animation-delay: 400ms*$i;
+    }
+}
+
+
+// Animation-menu (icône) :
 @keyframes animation-menu {
     0% {
         transform: rotate(-270deg);
@@ -205,8 +214,3 @@
 }
 
 
-@for $i from 1 through 4 {
-    .menu_choice#{$i} {
-    animation-delay: 400ms*$i;
-    }
-}

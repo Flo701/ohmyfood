@@ -51,6 +51,122 @@ h4 {
   font-size: 18px;
 }
 
+.loading {
+  background-color: #F2F2F2;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loading 3s forwards;
+}
+.loading::after {
+  content: "";
+  border-top: 6px solid #9356DC;
+  border-right: 6px solid #9356DC;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  animation: loading-spinner 1.5s linear forwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes loading {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 50px;
+  margin: auto;
+  border-radius: 27px;
+  border: none;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  box-shadow: 3px 3px 7px 1px #D9D9D9;
+  color: white;
+  transition: all 200ms ease;
+}
+@media screen and (max-width: 354px) {
+  .button {
+    width: 220px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button {
+    width: 290px;
+    height: 54px;
+    border-radius: 35px;
+  }
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 3px 3px 7px 1px #a6a6a6;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.85) 0%, rgba(147, 86, 220, 0.85) 100%);
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+.heart:hover :first-child {
+  opacity: 0;
+}
+.heart:hover :last-child {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.heart :first-child {
+  position: absolute;
+  font-size: 20px;
+  transition: all 1.5s 100ms;
+}
+@media screen and (min-width: 768px) {
+  .heart :first-child {
+    font-size: 23px;
+  }
+}
+.heart :last-child {
+  position: absolute;
+  font-size: 20px;
+  color: transparent;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 1.5s 100ms;
+}
+@media screen and (min-width: 768px) {
+  .heart :last-child {
+    font-size: 23px;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -803,121 +919,6 @@ h4 {
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-.loading {
-  background-color: #F2F2F2;
-  opacity: 0.8;
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: loading 3s forwards;
-}
-.loading::after {
-  content: "";
-  border-top: 6px solid #9356DC;
-  border-right: 6px solid #9356DC;
-  border-radius: 50%;
-  width: 85px;
-  height: 85px;
-  animation: loading-spinner 1.5s linear forwards;
-  animation-iteration-count: 2;
-}
-
-@keyframes loading {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-@keyframes loading-spinner {
-  0% {
-    transform: rotate(0deg);
-    visibility: visible;
-  }
-  100% {
-    transform: rotate(360deg);
-    visibility: hidden;
-  }
-}
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 260px;
-  height: 50px;
-  margin: auto;
-  border-radius: 27px;
-  border: none;
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: 3px 3px 7px 1px #D9D9D9;
-  color: white;
-  transition: all 200ms ease;
-}
-@media screen and (max-width: 354px) {
-  .button {
-    width: 220px;
-    height: 50px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .button {
-    width: 290px;
-    height: 54px;
-    border-radius: 35px;
-  }
-}
-.button:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  box-shadow: 3px 3px 7px 1px #a6a6a6;
-  background: linear-gradient(180deg, rgba(255, 121, 218, 0.85) 0%, rgba(147, 86, 220, 0.85) 100%);
-}
-
-.heart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 27px;
-  height: 27px;
-  cursor: pointer;
-}
-.heart:hover :first-child {
-  opacity: 0;
-}
-.heart:hover :last-child {
-  opacity: 1;
-  transform: scale(1.05);
-}
-.heart :first-child {
-  position: absolute;
-  font-size: 20px;
-  transition: all 1.5s 100ms;
-}
-@media screen and (min-width: 768px) {
-  .heart :first-child {
-    font-size: 23px;
-  }
-}
-.heart :last-child {
-  position: absolute;
-  font-size: 20px;
-  color: transparent;
-  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  opacity: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 1.5s 100ms;
-}
-@media screen and (min-width: 768px) {
-  .heart :last-child {
-    font-size: 23px;
   }
 }
 

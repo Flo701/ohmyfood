@@ -1,13 +1,18 @@
-@import "utils/variables";
-@import "utils/mixins";
-@import "base/base";
-@import "base/typography";
-@import "layout/header";
-@import "layout/footer";
-@import "pages/location";
-@import "pages/operating";
-@import "pages/restaurants";
-@import "pages/menu";
-@import "components/loading-spinner";
-@import "components/button";
-@import "components/heart";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/loading-spinner";
+@import "./components/button";
+@import "./components/heart";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/location";
+@import "./pages/operating";
+@import "./pages/restaurants";
+@import "./pages/menu";
+

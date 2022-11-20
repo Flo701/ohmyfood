@@ -7,11 +7,11 @@
 
 - Seules les maquettes pour la version mobile ont été réalisées. Le site devait également s’adapter sur tablette et desktop, mais nous étions libres pour leur mise en page.
 
--[Maquette de la page d'accueil du site](docs/maquette_page_d_accueil.png)
--[Maquette du menu pour la page du restaurant La palette du goût](docs/maquette_menu_la-palette_du_gout.png)
--[Maquette du menu pour la page du restaurant la note enchantée](docs/maquette_menu_la_note_enchantee.png)
--[Maquette du menu pour la page du restaurant À la française](docs/maquette_menu_a_la_francaise.png)
--[Maquette du menu pour la page du restaurant Le délice des sens](docs/maquette_menu_le_delice_des_sens.png)
+- [Maquette de la page d'accueil du site](docs/maquette_page_d_accueil.png)
+- [Maquette du menu pour la page du restaurant La palette du goût](docs/maquette_menu_la-palette_du_gout.png)
+- [Maquette du menu pour la page du restaurant la note enchantée](docs/maquette_menu_la_note_enchantee.png)
+- [Maquette du menu pour la page du restaurant À la française](docs/maquette_menu_a_la_francaise.png)
+- [Maquette du menu pour la page du restaurant Le délice des sens](docs/maquette_menu_le_delice_des_sens.png)
 
 ## Brief créatif (contraintes techniques et fonctionnelles) :
 
